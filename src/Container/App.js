@@ -1,12 +1,13 @@
 import { PrimaryButton } from "Components/Button";
 import Navbar from "Components/Navbar";
+import { AppWrapper } from "./StyledComponents";
 
 function App() {
   return (
-    <div className="App">
+    <AppWrapper>
       <PrimaryButton> testing </PrimaryButton>
       <Navbar />
-    </div>
+    </AppWrapper>
   );
 }
 

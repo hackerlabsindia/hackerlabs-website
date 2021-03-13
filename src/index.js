@@ -5,14 +5,13 @@ import ThemeContextProvider from "utils/styles/ThemeContextProvider";
 
 import App from "Container/App";
 import reportWebVitals from "./reportWebVitals";
-
+console.log(App, "app");
 ReactDOM.render(
   <React.StrictMode>
-    <GlobalStyle>
-      <ThemeContextProvider>
-        <App />
-      </ThemeContextProvider>
-    </GlobalStyle>
+    <ThemeContextProvider>
+      <GlobalStyle />
+      <App />
+    </ThemeContextProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
