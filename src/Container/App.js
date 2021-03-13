@@ -1,12 +1,12 @@
 import { PrimaryButton } from "Components/Button";
 import Navbar from "Components/Navbar";
+import ProfileCard from "Components/ProfileCard";
 import { AppWrapper } from "./StyledComponents";
 
 function App() {
   return (
     <AppWrapper>
-      <PrimaryButton> testing </PrimaryButton>
-      <Navbar />
+      <ProfileCard />
     </AppWrapper>
   );
 }

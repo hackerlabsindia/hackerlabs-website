@@ -1,6 +1,7 @@
 const theme = {
   colors: {
     backgroundColor: "#e8eff5",
+    fontColor: "#525252;",
   },
   fontSizes: {
     small: "10px",
@@ -9,8 +10,9 @@ const theme = {
     extraLarge: "2.5rem",
   },
   card: {
-    cardShadow: "7px 7px 15px #bbcfda, -7px -7px 15px #fff",
-    cardBorder: "1px solid rgba(255, 255, 255, 0.3)",
+    cardShadow: "5px 5px 10px #bbcfda, -5px -5px 10px #fff",
+    cardBorder: "2px solid rgba(255, 255, 255, 0.3)",
+    cardHoverBorder: "1px solid #f12711",
   },
 };
 
