@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import GlobalStyle from "utils/styles/GlobalStyle";
 import ThemeContextProvider from "utils/styles/ThemeContextProvider";
 
-import App from "./App";
+import App from "Container/App";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
