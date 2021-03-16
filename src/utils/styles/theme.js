@@ -2,6 +2,7 @@ const theme = {
   colors: {
     backgroundColor: "#e8eff5",
     fontColor: "#525252;",
+    complementColor: "#fe851e",
   },
   fontSizes: {
     small: "10px",
@@ -12,7 +13,8 @@ const theme = {
   card: {
     cardShadow: "5px 5px 10px #bbcfda, -5px -5px 10px #fff",
     cardBorder: "2px solid rgba(255, 255, 255, 0.3)",
-    cardHoverBorder: "1px solid #f12711",
+    cardHoverBorder: "1px solid #fe851e",
+    cardComplementBorderColor: "2px solid #fe851e",
   },
 };
 

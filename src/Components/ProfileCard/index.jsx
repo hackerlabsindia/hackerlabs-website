@@ -13,8 +13,9 @@ const StyledCard = styled(Card)`
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
-  border: ${(props) => props.theme.card.cardBorder};
-  box-shadow: ${(props) => props.theme.card.cardShadow};
+  border: ${(props) => props.theme.card.cardComplementBorderColor};
+  // box-shadow: ${(props) => props.theme.card.cardShadow};
+  // box-shadow: 2px 2px 4px 4px white;
   transition: all 400ms;
   transform: scale(1);
   img {
@@ -38,8 +39,8 @@ const StyledCard = styled(Card)`
     align-items: center;
     // border-bottom:
     padding: 1rem;
-    box-shadow: inset 9.91px 9.91px 15px #d9dade,
-      inset -9.91px -9.91px 15px #ffffff;
+    // box-shadow: inset 9.91px 9.91px 15px #d9dade,
+    //   inset -9.91px -9.91px 15px #ffffff;
   }
   h4 {
     margin-bottom: 0px;
@@ -61,7 +62,7 @@ const StyledCard = styled(Card)`
     border: ${(props) => props.theme.card.cardBorder};
     background: linear-gradient(145deg, #c5cbd0, #ffffff);
     border-radius: 5px;
-    box-shadow: 5.41px 5.41px 11px #c8ced3, -5.41px -5.41px 11px #ffffff;
+    // box-shadow: 5.41px 5.41px 11px #c8ced3, -5.41px -5.41px 11px #ffffff;
   }
   &:hover {
     transition: all 400ms;
