@@ -6,6 +6,7 @@ import { FaLinkedin } from "react-icons/fa";
 const StyledCard = styled(Card)`
   max-width: 20rem;
   padding: 1rem;
+  margin: 1rem;
   border-radius: 15px;
   color: ${(props) => props.theme.colors.fontColor};
   background: ${(props) => props.theme.colors.backgroundColor};
@@ -72,43 +73,47 @@ const StyledCard = styled(Card)`
 `;
 
 const PorfileCard = (props) => {
+  const { developerData } = props;
   return (
-    <StyledCard
-      hoverable
-      cover={
-        <div className="image_container">
-          <div className="image_parent">
-            <img
-              alt="example"
-              src="https://avatars.githubusercontent.com/u/50172413?s=460&u=0573967b786828dda99a1efb64dff093fb654f08&v=4"
-            />
-          </div>
-        </div>
-      }>
-      <h3> Bimlendu Kumar</h3>
-      <h4>Skills</h4>
-      <div className="skill_container">
-        {["JavaScript", "Node", "Express", "React", "HTML", "CSS"].map(
-          (skill) => (
-            <button className="skill"> {skill}</button>
-          )
-        )}
-      </div>
-      <PrimaryButton
-        style={{ width: "100%" }}
-        icon={
-          <FaLinkedin
-            style={{
-              fontSize: "20px",
-              verticalAlign: "middle",
-              marginRight: "1rem",
-            }}
-          />
-        }>
-        {" "}
-        Know More
-      </PrimaryButton>
-    </StyledCard>
+    <div style={{ padding: "1rem", display: "flex", flexWrap: "wrap" }}>
+      {developerData.map((info) => {
+        return (
+          <StyledCard
+            hoverable
+            cover={
+              <div className="image_container">
+                <div className="image_parent">
+                  <img alt={info.name} src={info.img} />
+                </div>
+              </div>
+            }>
+            <h3> {info.name}</h3>
+            <h4>Skills</h4>
+            <div className="skill_container">
+              {info?.skills?.map((skill) => (
+                <button className="skill"> {skill}</button>
+              ))}
+            </div>
+            <a href={info.linkedIn} target="_blank">
+              <PrimaryButton
+                style={{ width: "100%" }}
+                icon={
+                  <FaLinkedin
+                    style={{
+                      fontSize: "20px",
+                      verticalAlign: "middle",
+                      marginRight: "1rem",
+                    }}
+                  />
+                }>
+                {" "}
+                Connect
+              </PrimaryButton>
+            </a>
+          </StyledCard>
+        );
+      })}
+    </div>
   );
 };
 
