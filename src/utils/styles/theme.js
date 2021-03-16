@@ -3,6 +3,7 @@ const theme = {
     backgroundColor: "#e8eff5",
     fontColor: "#525252;",
     complementColor: "#fe851e",
+    hoverBackgroundColor: "#d5e2ed",
   },
   fontSizes: {
     small: "10px",

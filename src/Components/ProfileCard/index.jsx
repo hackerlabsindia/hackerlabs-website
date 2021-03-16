@@ -7,16 +7,15 @@ const StyledCard = styled(Card)`
   max-width: 20rem;
   padding: 1rem;
   margin: 1rem;
-  border-radius: 15px;
+  border-radius: 10px;
   color: ${(props) => props.theme.colors.fontColor};
   background: ${(props) => props.theme.colors.backgroundColor};
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
-  border: ${(props) => props.theme.card.cardComplementBorderColor};
-  // box-shadow: ${(props) => props.theme.card.cardShadow};
-  // box-shadow: 2px 2px 4px 4px white;
+  border: 1px solid lightgray;
+
   transition: all 400ms;
   transform: scale(1);
   img {
@@ -38,10 +37,7 @@ const StyledCard = styled(Card)`
     display: flex;
     justify-content: center;
     align-items: center;
-    // border-bottom:
     padding: 1rem;
-    // box-shadow: inset 9.91px 9.91px 15px #d9dade,
-    //   inset -9.91px -9.91px 15px #ffffff;
   }
   h4 {
     margin-bottom: 0px;
@@ -55,20 +51,19 @@ const StyledCard = styled(Card)`
   .skill {
     color: ${(props) => props.theme.colors.fontColor};
     padding: 0.2rem 0.4rem;
+
     font-weight: bold;
     margin: 0.5rem 0.5rem;
     border: none;
     outline: none;
     font-size: 13px;
-    border: ${(props) => props.theme.card.cardBorder};
-    background: linear-gradient(145deg, #c5cbd0, #ffffff);
-    border-radius: 5px;
-    // box-shadow: 5.41px 5.41px 11px #c8ced3, -5.41px -5.41px 11px #ffffff;
+    background: ${(props) => props.theme.colors.backgroundColor};
+    border-radius: 3px;
+    border: 1px solid lightgray;
   }
   &:hover {
     transition: all 400ms;
-    transform: scale(1.01);
-    border: ${(props) => props.theme.card.cardHoverBorder};
+    background: ${(props) => props.theme.colors.hoverBackgroundColor};
   }
 `;
 

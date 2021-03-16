@@ -14,23 +14,18 @@ const StyledButton = styled(Button)`
   vertical-align: middle;
   outline: none;
   cursor: pointer;
-  border: ${(props) => props.theme.card.cardComplementBorderColor};
-  // box-shadow: 7px 7px 15px #bbcfda, -4px -4px 13px #fff,
-  //   inset 4px 4px 8px rgba(209, 217, 230, 0.2),
-  //   inset -8px -8px 8px rgba(255, 255, 255, 0.2);
-  background-color: #e8eff5;
-  // border: 1px solid rgba(255, 255, 255, 0.3);
+  // border:1px solid lightgray;
+ 
+  background-color: #b3c7de;
+  
   transition: all 400ms;
   &:hover {
-    // box-shadow: 4px 2px 18px #bbcfda, -4px -4px 13px #fff,
-    //   inset 6px 6px 16px rgba(209, 217, 230, 0.8),
-    //   inset -8px -8px 8px rgba(255, 255, 255, 0.2);
+    
     transition: all 400ms;
     transform: translateY(2px);
-    // color: #f12711;
+    
     color:
     transform: scale(0.96);
-    // border: 0.5px solid #f12711;
   }
 `;
 
