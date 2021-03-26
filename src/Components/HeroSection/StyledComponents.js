@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeroWrapper = styled.section`
   width: 85%;
-  margin: 2rem auto;
+  margin: 10rem auto;
   display: flex;
   flex-wrap: wrap;
   justify-content:space-between;
@@ -18,7 +18,7 @@ export const HeroWrapper = styled.section`
   }
   .hero_title {
     color: #314584;
-    font-size:4rem;
+    font-size:3rem;
     margin:0;
     padding:0;
   }
@@ -30,7 +30,7 @@ export const HeroWrapper = styled.section`
       width:60%;
       img {
           width:100%;
-          height:100%
+          // height:100%
       }
   }
 `;

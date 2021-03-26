@@ -39,6 +39,7 @@ const StyledCard = styled(Card)`
     align-items: center;
     padding: 1rem;
   }
+
   h4 {
     margin-bottom: 0px;
   }
@@ -70,44 +71,55 @@ const StyledCard = styled(Card)`
 const PorfileCard = (props) => {
   const { developerData } = props;
   return (
-    <div style={{ padding: "1rem", display: "flex", flexWrap: "wrap" }}>
-      {developerData.map((info) => {
-        return (
-          <StyledCard
-            hoverable
-            cover={
-              <div className="image_container">
-                <div className="image_parent">
-                  <img alt={info.name} src={info.img} />
+    <div
+      style={{
+        width: "85%",
+        margin: "4rem auto",
+      }}>
+      <h1 className="section_title"> Team</h1>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+        }}>
+        {developerData.map((info) => {
+          return (
+            <StyledCard
+              hoverable
+              cover={
+                <div className="image_container">
+                  <div className="image_parent">
+                    <img alt={info.name} src={info.img} />
+                  </div>
                 </div>
+              }>
+              <h3> {info.name}</h3>
+              <h4>Skills</h4>
+              <div className="skill_container">
+                {info?.skills?.map((skill) => (
+                  <button className="skill"> {skill}</button>
+                ))}
               </div>
-            }>
-            <h3> {info.name}</h3>
-            <h4>Skills</h4>
-            <div className="skill_container">
-              {info?.skills?.map((skill) => (
-                <button className="skill"> {skill}</button>
-              ))}
-            </div>
-            <a href={info.linkedIn} target="_blank">
-              <PrimaryButton
-                style={{ width: "100%" }}
-                icon={
-                  <FaLinkedin
-                    style={{
-                      fontSize: "20px",
-                      verticalAlign: "middle",
-                      marginRight: "1rem",
-                    }}
-                  />
-                }>
-                {" "}
-                Connect
-              </PrimaryButton>
-            </a>
-          </StyledCard>
-        );
-      })}
+              <a href={info.linkedIn} target="_blank">
+                <PrimaryButton
+                  style={{ width: "100%" }}
+                  icon={
+                    <FaLinkedin
+                      style={{
+                        fontSize: "20px",
+                        verticalAlign: "middle",
+                        marginRight: "1rem",
+                      }}
+                    />
+                  }>
+                  {" "}
+                  Connect
+                </PrimaryButton>
+              </a>
+            </StyledCard>
+          );
+        })}
+      </div>
     </div>
   );
 };
