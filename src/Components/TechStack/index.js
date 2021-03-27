@@ -26,7 +26,7 @@ const TechStack = (props) => {
   return (
     <TechStackWrapper>
       {" "}
-      <h1 className="section_title"> Tech Stack</h1>
+      <h1 className="section_title"> We Prefer</h1>
       <div className="card_section">
         {data.map((oneCard, index1) => {
           return (
