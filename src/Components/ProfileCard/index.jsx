@@ -2,11 +2,12 @@ import { Card } from "antd";
 import { PrimaryButton } from "Components/Button";
 import styled from "styled-components";
 import { FaLinkedin } from "react-icons/fa";
+import { RiCheckboxBlankCircleFill } from "react-icons/ri";
 
 const StyledCard = styled(Card)`
-  max-width: 20rem;
+  max-width: 19rem;
   padding: 1rem;
-  margin: 1rem;
+  margin: 1rem 0;
   border-radius: 10px;
   color: ${(props) => props.theme.colors.fontColor};
   background: ${(props) => props.theme.colors.backgroundColor};
@@ -43,6 +44,19 @@ const StyledCard = styled(Card)`
   h4 {
     margin-bottom: 0px;
   }
+  h3 {
+    margin: 0;
+  }
+  .name_section {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .staus_name {
+      display: flex;
+      align-items: center;
+    }
+  }
   .skill_container {
     display: flex;
     flex-wrap: wrap;
@@ -76,11 +90,12 @@ const PorfileCard = (props) => {
         width: "85%",
         margin: "4rem auto",
       }}>
-      <h1 className="section_title"> Team</h1>
+      <h1 className="section_title"> Our Team</h1>
       <div
         style={{
           display: "flex",
           flexWrap: "wrap",
+          justifyContent: "space-around",
         }}>
         {developerData.map((info) => {
           return (
@@ -93,29 +108,41 @@ const PorfileCard = (props) => {
                   </div>
                 </div>
               }>
-              <h3> {info.name}</h3>
+              <div className="name_section">
+                <div className="staus_name">
+                  <RiCheckboxBlankCircleFill
+                    style={{ color: info.status, marginRight: "5px" }}
+                  />
+                  <h3> {info.name}</h3>
+                </div>
+                <a href={info.linkedIn} target="_blank">
+                  <FaLinkedin
+                    style={{
+                      fontSize: "20px",
+                      verticalAlign: "middle",
+                      marginRight: ".5rem",
+                    }}
+                  />
+                </a>
+              </div>
               <h4>Expertise</h4>
               <div className="skill_container">
                 {info?.skills?.map((skill) => (
-                  <button className="skill"> {skill}</button>
+                  <button
+                    className="skill"
+                    style={{
+                      border: `1px solid ${
+                        "#" +
+                        Math.floor(Math.random() * 16777215)
+                          .toString(16)
+                          .padStart(6, "0")
+                      }`,
+                    }}>
+                    {" "}
+                    {skill}
+                  </button>
                 ))}
               </div>
-              <a href={info.linkedIn} target="_blank">
-                <PrimaryButton
-                  style={{ width: "100%" }}
-                  icon={
-                    <FaLinkedin
-                      style={{
-                        fontSize: "20px",
-                        verticalAlign: "middle",
-                        marginRight: ".5rem",
-                      }}
-                    />
-                  }>
-                  {" "}
-                  Connect
-                </PrimaryButton>
-              </a>
             </StyledCard>
           );
         })}
