@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeroWrapper = styled.section`
   width: 85%;
-  margin: 10rem auto;
+  margin: 2rem auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -27,7 +27,7 @@ export const HeroWrapper = styled.section`
     margin-top: 1rem;
   }
   .image_container {
-    width: 40%;
+    width: 50%;
 
     img {
       width: 100%;
