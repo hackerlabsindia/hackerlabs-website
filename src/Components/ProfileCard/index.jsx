@@ -94,7 +94,7 @@ const PorfileCard = (props) => {
                 </div>
               }>
               <h3> {info.name}</h3>
-              <h4>Skills</h4>
+              <h4>Expertise</h4>
               <div className="skill_container">
                 {info?.skills?.map((skill) => (
                   <button className="skill"> {skill}</button>
@@ -108,7 +108,7 @@ const PorfileCard = (props) => {
                       style={{
                         fontSize: "20px",
                         verticalAlign: "middle",
-                        marginRight: "1rem",
+                        marginRight: ".5rem",
                       }}
                     />
                   }>

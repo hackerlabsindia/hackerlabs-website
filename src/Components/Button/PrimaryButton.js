@@ -8,15 +8,15 @@ const StyledButton = styled(Button)`
   font-weight: 900;
   height: 2.5rem;
   width: 5rem;
-  /* padding-left: 2rem; */
+color:white;
   border-radius: 5px;
   border: none;
   vertical-align: middle;
   outline: none;
   cursor: pointer;
-  // border:1px solid lightgray;
  
-  background-color: #b3c7de;
+ 
+ background: ${(props) => props.theme.colors.secondaryBackgroundColor};
   
   transition: all 400ms;
   &:hover {
