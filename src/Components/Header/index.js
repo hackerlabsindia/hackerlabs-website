@@ -10,10 +10,10 @@ const Header = (props) => {
         </div>
         <nav>
           <a href="#hero">Home</a>
-          <a href="#developer">Developer</a>
-          <a href="#techstach">Tech Stack</a>
-
-          <a href="#contactus">Contact Us</a>
+          <a href="#hero">About</a>
+          <a href="#dev">Dev</a>
+          <a href="#tech">Tech</a>
+          <a href="#contact">Contact</a>
         </nav>
       </div>
     </HeaderWrapper>
