@@ -27,7 +27,8 @@ export const HeroWrapper = styled.section`
     margin-top: 1rem;
   }
   .image_container {
-    width: 60%;
+    width: 40%;
+
     img {
       width: 100%;
       // height:100%

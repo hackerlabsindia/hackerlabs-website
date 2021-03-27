@@ -8,7 +8,7 @@ const HeroSection = (props) => {
         <h3 className="hero_sub_title"> Ideation to Realization</h3>
       </div>
       <div className="image_container">
-        <img src="https://originative360.com/wp-content/uploads/2020/09/HEAD-Project_management_features_report-_Is_2019_the_year_to_replace_your_current_solution-_Hero.png" />
+        <img src="https://mk0prontomarkethe0vk.kinstacdn.com/wp-content/uploads/sites/3/2020/07/banner-sideimg.min_.svg" />
       </div>
     </HeroWrapper>
   );
