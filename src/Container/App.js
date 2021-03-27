@@ -6,6 +6,7 @@ import { developerData } from "data/developerData";
 import Header from "Components/Header";
 import HeroSection from "Components/HeroSection";
 import TechStack from "Components/TechStack";
+import Footer from "Components/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <HeroSection />
       <ProfileCard developerData={developerData} />
       <TechStack />
+      <Footer />
     </AppWrapper>
   );
 }
