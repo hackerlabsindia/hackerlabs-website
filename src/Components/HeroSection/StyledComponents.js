@@ -14,11 +14,23 @@ export const HeroWrapper = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    // text-align: center;
+  }
+  .hero_title2 {
+    color: white;
+    font-size: 4rem;
+    margin: 0.5rem 0;
+    padding: 0;
+  }
+  .hero_title1 {
+    color: #314584;
+    font-size: 4rem;
+    margin: 0.5rem 0;
+    padding: 0;
   }
   .hero_title {
     color: #314584;
-    font-size: 3rem;
+    font-size: 4rem;
     margin: 0;
     padding: 0;
   }
