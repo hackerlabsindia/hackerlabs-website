@@ -11,7 +11,10 @@ const HeroSection = (props) => {
         <h1 className="hero_title2"> #Remote</h1>
       </div>
       <div className="image_container">
-        <img src="https://mk0prontomarkethe0vk.kinstacdn.com/wp-content/uploads/sites/3/2020/07/banner-sideimg.min_.svg" />
+        <img
+          src="https://mk0prontomarkethe0vk.kinstacdn.com/wp-content/uploads/sites/3/2020/07/banner-sideimg.min_.svg"
+          alt="hero"
+        />
       </div>
     </HeroWrapper>
   );

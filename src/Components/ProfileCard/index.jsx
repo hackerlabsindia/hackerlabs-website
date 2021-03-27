@@ -1,5 +1,4 @@
 import { Card } from "antd";
-import { PrimaryButton } from "Components/Button";
 import styled from "styled-components";
 import { FaLinkedin } from "react-icons/fa";
 import { RiCheckboxBlankCircleFill } from "react-icons/ri";
@@ -97,9 +96,10 @@ const PorfileCard = (props) => {
           flexWrap: "wrap",
           justifyContent: "space-around",
         }}>
-        {developerData.map((info) => {
+        {developerData.map((info, i) => {
           return (
             <StyledCard
+              key={i}
               hoverable
               cover={
                 <div className="image_container">
@@ -115,7 +115,7 @@ const PorfileCard = (props) => {
                   />
                   <h3> {info.name}</h3>
                 </div>
-                <a href={info.linkedIn} target="_blank">
+                <a href={info.linkedIn} target="_blank" rel="noreferrer">
                   <FaLinkedin
                     style={{
                       fontSize: "20px",
@@ -127,8 +127,9 @@ const PorfileCard = (props) => {
               </div>
               <h4>Expertise</h4>
               <div className="skill_container">
-                {info?.skills?.map((skill) => (
+                {info?.skills?.map((skill, index) => (
                   <button
+                    key={index}
                     className="skill"
                     style={{
                       border: `1px solid ${
