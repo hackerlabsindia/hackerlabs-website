@@ -7,6 +7,7 @@ import Header from "Components/Header";
 import HeroSection from "Components/HeroSection";
 import TechStack from "Components/TechStack";
 import Footer from "Components/Footer";
+import Contact from "Components/Contact";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <HeroSection />
       <ProfileCard developerData={developerData} />
       <TechStack />
+      <Contact />
       <Footer />
     </AppWrapper>
   );
