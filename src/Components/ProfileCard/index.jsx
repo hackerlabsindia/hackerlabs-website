@@ -4,7 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { RiCheckboxBlankCircleFill } from "react-icons/ri";
 
 const StyledCard = styled(Card)`
-  max-width: 19rem;
+  max-width: 18rem;
   padding: 1rem;
   margin: 1rem 0;
   border-radius: 10px;
@@ -13,7 +13,7 @@ const StyledCard = styled(Card)`
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  gap: 1rem;
   border: 1px solid lightgray;
 
   transition: all 400ms;
@@ -23,6 +23,8 @@ const StyledCard = styled(Card)`
     border-radius: 50%;
     box-shadow: 0px 0px 0px 5px #e8eff5, 13px 13px 22px #bbcfda,
       -13px -13px 22px #ffffff;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
   }
   .image_parent {
     padding: 10px 0;
@@ -94,7 +96,8 @@ const PorfileCard = (props) => {
         style={{
           display: "flex",
           flexWrap: "wrap",
-          justifyContent: "space-around",
+          // justifyContent: "space-around",
+          gap: "1rem",
         }}>
         {developerData.map((info, i) => {
           return (

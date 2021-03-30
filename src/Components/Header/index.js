@@ -11,7 +11,7 @@ const Header = (props) => {
         <nav>
           <a href="#hero">Home</a>
           <a href="#hero">About</a>
-          <a href="#dev">Dev</a>
+          <a href="#dev">Devs</a>
           <a href="#tech">Tech</a>
           <a href="#contact">Contact</a>
         </nav>
