@@ -19,6 +19,7 @@ export const HeaderWrapper = styled.div`
       .title {
         padding: 0;
         margin: 0;
+        color: white;
       }
     }
     img {
@@ -43,6 +44,49 @@ export const HeaderWrapper = styled.div`
       active {
         outline: 1px solid white;
       }
+    }
+  }
+  .toggle_btn {
+    margin-right: 1rem;
+  }
+  .absolute_navbar {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+  }
+  .header_navbar {
+    width: 250px;
+    display: none;
+  }
+  .icon {
+    vertical-align: middle;
+  }
+
+  @media (max-width: 1000px) {
+    .container {
+      width: 100%;
+      padding-left: 1rem;
+    }
+    .header_navbar {
+      display: block;
+    }
+    nav {
+      display: none !important;
+    }
+  }
+
+  @media (min-width: 1000.1px) {
+    .header_navbar {
+      display: block;
+    }
+    .toggle_btn {
+      display: none;
+    }
+    .header_navbar {
+      display: none;
+    }
+    .spred_nav_bar {
+      display: block;
     }
   }
 `;
