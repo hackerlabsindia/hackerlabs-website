@@ -5,7 +5,7 @@ const Footer = (props) => {
     <StyledFooter>
       {" "}
       <h3> Developers' Owned Studio</h3>
-      <h5> &#169; Hacker Labs </h5>
+      <h5> &#169; HackerLabs </h5>
     </StyledFooter>
   );
 };

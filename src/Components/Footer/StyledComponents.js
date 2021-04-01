@@ -10,9 +10,11 @@ export const StyledFooter = styled.footer`
     padding: 0;
     margin: 0;
     margin-bottom: 0.4rem;
+    color: #ffffff;
   }
   h5 {
     padding: 0;
     margin: 0;
+    color: #ffffff;
   }
 `;

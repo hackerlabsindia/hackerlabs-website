@@ -17,7 +17,7 @@ export const HeroWrapper = styled.section`
     // text-align: center;
   }
   .hero_title2 {
-    color: white;
+    color: #23232326;
     font-size: 4rem;
     margin: 0.5rem 0;
     padding: 0;
