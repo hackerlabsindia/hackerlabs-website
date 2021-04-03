@@ -5,6 +5,7 @@ import { RiCheckboxBlankCircleFill } from "react-icons/ri";
 
 const StyledCard = styled(Card)`
   max-width: 18rem;
+  min-width: 270px;
   padding: 1rem;
   margin: 1rem 0;
   border-radius: 10px;
@@ -80,6 +81,11 @@ const StyledCard = styled(Card)`
   &:hover {
     transition: all 400ms;
     background: ${(props) => props.theme.colors.hoverBackgroundColor};
+  }
+
+  @media (max-width: 650px) and (min-width: 420px) {
+    max-width: 400px;
+    margin: 1rem auto;
   }
 `;
 

@@ -1,6 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+  *, *:before, *:after {
+  box-sizing: border-box;
+}
 @media (max-width: 1000px) {
    html {
      font-size:13px;
@@ -22,10 +25,8 @@ const GlobalStyle = createGlobalStyle`
     font-family: "Roboto", sans-serif;
      background: #e8eff5;
   }
-   *, *:before, *:after {
-  box-sizing: border-box;
   
-} 
+  
 `;
 
 export default GlobalStyle;
