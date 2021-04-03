@@ -87,6 +87,9 @@ const StyledCard = styled(Card)`
     max-width: 400px;
     margin: 1rem auto;
   }
+  @media (max-width: 419.9px) {
+    margin: 1rem auto;
+  }
 `;
 
 const PorfileCard = (props) => {
