@@ -1,6 +1,6 @@
 import { Card } from "antd";
 import styled from "styled-components";
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { RiCheckboxBlankCircleFill } from "react-icons/ri";
 
 const StyledCard = styled(Card)`
@@ -128,15 +128,26 @@ const PorfileCard = (props) => {
                   />
                   <h3> {info.name}</h3>
                 </div>
-                <a href={info.linkedIn} target="_blank" rel="noreferrer">
-                  <FaLinkedin
-                    style={{
-                      fontSize: "20px",
-                      verticalAlign: "middle",
-                      marginRight: ".5rem",
-                    }}
-                  />
-                </a>
+                <div>
+                  <a href={info.linkedIn} target="_blank" rel="noreferrer">
+                    <FaLinkedin
+                      style={{
+                        fontSize: "20px",
+                        verticalAlign: "middle",
+                        marginRight: ".5rem",
+                      }}
+                    />
+                  </a>
+                  <a href={info.github} target="_blank" rel="noreferrer">
+                    <FaGithub
+                      style={{
+                        fontSize: "20px",
+                        verticalAlign: "middle",
+                        marginRight: ".5rem",
+                      }}
+                    />
+                  </a>
+                </div>
               </div>
               <h4>Expertise</h4>
               <div className="skill_container">
