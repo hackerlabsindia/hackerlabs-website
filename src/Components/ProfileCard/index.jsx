@@ -96,6 +96,7 @@ const PorfileCard = (props) => {
   const { developerData } = props;
   return (
     <div
+      id="dev"
       style={{
         width: "85%",
         margin: "4rem auto",

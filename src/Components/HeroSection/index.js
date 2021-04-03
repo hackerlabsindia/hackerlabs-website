@@ -2,7 +2,7 @@ import { HeroWrapper } from "./StyledComponents";
 
 const HeroSection = (props) => {
   return (
-    <HeroWrapper>
+    <HeroWrapper id="hero">
       <div className="heading_container">
         <h1 className="hero_title"> We Build </h1>
         <h1 className="hero_title1">🌎 & 📱</h1>

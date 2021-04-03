@@ -24,7 +24,7 @@ const data = [
 
 const TechStack = (props) => {
   return (
-    <TechStackWrapper>
+    <TechStackWrapper id="tech">
       {" "}
       <h1 className="section_title"> We Prefer</h1>
       <div className="card_section">

@@ -2,7 +2,7 @@ import { ContactWraper } from "./StyledComponents";
 
 const Contact = (props) => {
   return (
-    <ContactWraper>
+    <ContactWraper id="contact">
       <h1 className="section_title"> Contact</h1>
       <p>
         Get in touch with us at{" "}
