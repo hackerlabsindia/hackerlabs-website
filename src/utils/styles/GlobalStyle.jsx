@@ -16,6 +16,9 @@ const GlobalStyle = createGlobalStyle`
      
    }
   }
+  html {
+  scroll-behavior: smooth;
+}
   html, 
   body {
     margin: 0;
