@@ -1,6 +1,18 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+@media (max-width: 1000px) {
+   html {
+     font-size:13px;
+
+   }
+  }
+   @media (max-width: 800px) {
+   html {
+     font-size:10px;
+     
+   }
+  }
   html, 
   body {
     margin: 0;
@@ -12,6 +24,7 @@ const GlobalStyle = createGlobalStyle`
   }
    *, *:before, *:after {
   box-sizing: border-box;
+  
 } 
 `;
 

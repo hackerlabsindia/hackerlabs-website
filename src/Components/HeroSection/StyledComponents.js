@@ -46,4 +46,13 @@ export const HeroWrapper = styled.section`
       // height:100%
     }
   }
+
+  @media (max-width: 1000px) {
+    .image_container {
+      display: none;
+    }
+    .heading_container {
+      width: 100%;
+    }
+  }
 `;
