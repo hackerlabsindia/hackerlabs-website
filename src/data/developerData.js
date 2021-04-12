@@ -36,7 +36,7 @@ export const developerData = [
       "Cloud Deployment",
     ],
     img: "https://avatars.githubusercontent.com/u/42885835?v=4",
-    linkedIn: "hhttps://www.linkedin.com/in/shastri48/",
+    linkedIn: "https://www.linkedin.com/in/shastri48/",
     github: "https://github.com/shastri48",
   },
   {
@@ -44,7 +44,15 @@ export const developerData = [
     status: "gray",
     skills: ["Backend & API Design", "JavaScript", "Node", "React", "Vue"],
     img: "https://avatars.githubusercontent.com/u/13575704?v=4",
-    linkedIn: "hhttps://www.linkedin.com/in/shastri48/",
-    github: "",
+    linkedIn: "https://www.linkedin.com/in/adarshlilha/",
+    github: "https://github.com/adarshlilha",
+  },
+  {
+    name: "Md Abu Zafar",
+    status: "green",
+    skills: ["Elixir/Phoenix", "Elm", "React", "Svelte", "Rails"],
+    github: "https://github.com/mdaz78",
+    linkedIn: "https://www.linkedin.com/in/mdaz78/",
+    img: "https://avatars.githubusercontent.com/u/4301878?v=4",
   },
 ];
