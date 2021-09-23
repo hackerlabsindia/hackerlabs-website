@@ -8,18 +8,38 @@ import {
   SiAdobephotoshop,
   SiReact,
   SiVueDotJs,
+  SiTypescript,
+  SiApollographql,
+  SiGraphql,
+  SiMongodb,
+  SiMysql,
+  SiBootstrap,
+  SiMaterialUi
 } from "react-icons/si";
+import { FaNode } from "react-icons/fa"
+import { AiOutlineAntDesign } from "react-icons/ai"
 
 const data = [
   {
     name: "Language",
-    list: [<IoLogoJavascript />, <SiCplusplus />, <SiPython />],
+    list: [<IoLogoJavascript />, <SiCplusplus />, <SiPython />, <SiTypescript />],
   },
   {
     name: "Library and FrameWork",
     list: [<SiReact />, <SiVueDotJs />, <SiDjango />],
   },
-  { name: "Design", list: [<SiFigma />, <SiAdobephotoshop />] },
+  {
+    name: "Backend",
+    list: [<FaNode />, <SiMongodb />, <SiMysql />, <SiApollographql />, <SiGraphql />]
+  },
+  {
+    name: "Component Library",
+    list: [<AiOutlineAntDesign />, <SiBootstrap />, <SiMaterialUi />]
+  },
+  {
+    name: "Design",
+    list: [<SiFigma />, <SiAdobephotoshop />]
+  },
 ];
 
 const TechStack = (props) => {

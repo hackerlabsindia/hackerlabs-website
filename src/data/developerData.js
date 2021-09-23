@@ -10,7 +10,7 @@ export const developerData = [
   {
     name: "Bimlendu Kumar",
     status: "green",
-    skills: ["Node", "JavaScript", "Express", "React", "FrontEnd Design"],
+    skills: ["React", "React-Native", "Node", "Express", "JavaScript", "TypeScript", "GraphQL", "FrontEnd Design"],
     img:
       "https://avatars.githubusercontent.com/u/50172413?s=460&u=0573967b786828dda99a1efb64dff093fb654f08&v=4",
     linkedIn: "https://www.linkedin.com/in/bim240/",
