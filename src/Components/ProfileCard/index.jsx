@@ -27,6 +27,10 @@ const StyledCard = styled(Card)`
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
   }
+  img:hover {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+  }
   .image_parent {
     padding: 10px 0;
     height: 100px;

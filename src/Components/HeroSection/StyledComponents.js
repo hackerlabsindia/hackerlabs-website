@@ -42,7 +42,7 @@ export const HeroWrapper = styled.section`
     width: 50%;
 
     img {
-      width: 100%;
+      width: 80%;
       // height:100%
     }
   }

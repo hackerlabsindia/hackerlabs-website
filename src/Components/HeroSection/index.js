@@ -12,7 +12,7 @@ const HeroSection = (props) => {
       </div>
       <div className="image_container">
         <img
-          src="https://mk0prontomarkethe0vk.kinstacdn.com/wp-content/uploads/sites/3/2020/07/banner-sideimg.min_.svg"
+          src=""
           alt="hero"
         />
       </div>
