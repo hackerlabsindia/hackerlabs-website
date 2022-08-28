@@ -12,7 +12,7 @@ const HeroSection = (props) => {
       </div>
       <div className="image_container">
         <img
-          src=""
+          src="https://themes.envytheme.com/stike/wp-content/uploads/2020/03/banner-illustration-1.png"
           alt="hero"
         />
       </div>

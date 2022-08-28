@@ -27,7 +27,7 @@ const Header = (props) => {
             {showNavBar ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
           </Button>
           <img src="./logo192.png" alt="logo" />
-          <h1 className="title"> HackerLabs</h1>
+          <h1 className="title"> HackerLabs 🇮🇳</h1>
         </div>
         <nav className="spred_nav_bar">
           <a href="#hero">Home</a>
