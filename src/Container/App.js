@@ -12,7 +12,7 @@ function App() {
     <AppWrapper>
       <Header />
       <HeroSection />
-      <ProfileCard developerData={developerData} />
+      {/* <ProfileCard developerData={developerData} /> */}
       <TechStack />
       <Contact />
       <Footer />
