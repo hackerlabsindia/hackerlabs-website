@@ -32,7 +32,7 @@ const Header = (props) => {
         <nav className="spred_nav_bar">
           <a href="#hero">Home</a>
           <a href="#about">About</a>
-          <a href="#dev">Devs</a>
+          {/* <a  href="#dev">Devs</a> */}
           <a href="#tech">Tech</a>
           <a href="#contact">Contact</a>
         </nav>
