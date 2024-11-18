@@ -1,0 +1,85 @@
+.max-w-clamp-custom {
+  max-width: clamp(20rem /* 320px */, 95%, 86rem /* 1376px */);
+}
+.glow-dot {
+  border-radius: 50%; /* Makes it circular */
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.6), 0 0 20px rgba(0, 0, 255, 0.4),
+    0 0 30px rgba(0, 0, 255, 0.2); /* Glowing effect */
+}
+.border-light {
+  border: 1px solid rgb(236, 234, 234);
+}
+.visible-no-transform {
+  opacity: 1;
+  transform: none;
+}
+.marquee-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  --marquee-play: running; /* Custom CSS variable */
+}
+.marquee-item {
+  display: inline-block;
+  white-space: nowrap;
+  transform: translate3d(-3200px, 0px, 0px);
+  animation-name: marqueeScroll;
+  animation-duration: 52.8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: var(--marquee-play);
+  animation-direction: reverse;
+}
+.inline-relative {
+  position: relative;
+  display: inline-block;
+  margin-right: 0.15em;
+}
+.relative-inline {
+  position: relative;
+  display: inline-block;
+  margin-right: 0.15em;
+}
+
+.border-color {
+  border-color: color(srgb red green blue);
+}
+.no-transform {
+  transform: none;
+}
+.font-header {
+  font-family: "Arial", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 0.8;
+}
+.translate-up {
+  opacity: 1;
+  transform: translateY(50px) translateZ(0px);
+}
+.not-transform {
+  opacity: 1;
+  transform: none;
+}
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: white;
+}
+.no-outline {
+  outline: none;
+}
+.transformed-element {
+  opacity: 1;
+  width: 110%;
+  min-height: 21rem;
+  transform: rotate(1.2deg) translateZ(0px);
+}
+.transformed-element {
+  opacity: 1;
+  width: 110%;
+  min-height: 21rem;
+  transform: rotate(1.2deg) translateZ(0px);
+}

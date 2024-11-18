@@ -1,0 +1,53 @@
+{
+    "header" : {
+        "appTitle" : "HackerLabs",
+        "fontHeader" : "Available oct. 2024"
+        
+    },
+     "buttons"  : { 
+        "button1" : "Start a Project",
+        "button2" : "See Packages"
+
+    },
+    "mainPage" : {
+        "topTitle" : "We're a seriously good",
+        "plus" : "+",
+        "titleText" : "Hybrid Web Development",
+        "lastWord" : "   agency."
+    },
+    "secondaryText": {
+        "line1" : "Great websites need great code.",
+        "line2" : "We never use no-code tools or templates.",
+        "line3" : "So you get a website that's truly yours ❤️"
+    },
+    "animatedText" : {
+        "text1" : "Web Development",
+        "text2" : "UI/UX Design ",
+        "text3" : "Landing Pages",
+        "text4" : "SaaS",
+        "text5" : "Software Development",
+        "text6" : "Consulting"
+    },
+    "tableHeading" : {
+        "text1" : "We",
+        "text2" : "specialise",
+        "emoji" : "✨",
+        "text3" : "in"
+    },
+    "Packages" : {
+        "heading" : "Packages",
+        "description" : "Easy, set prices for a simple SaaS, landing page or website."
+    },
+    "Development" : {
+        "heading" : "Software Development",
+        "description" : "Custom software solution. We call to talk through your ideas to find a suitable scope."
+    },
+     "Consulting" : {
+        "heading" : "Consulting",
+        "description" : "Help you with your project or advice to get you started."
+        
+    }
+
+
+
+}
