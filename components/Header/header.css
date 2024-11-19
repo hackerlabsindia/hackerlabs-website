@@ -1,0 +1,40 @@
+.headerContainer1 {
+  @apply border-color flex justify-center border-t;
+}
+.headerContainer2 {
+  @apply flex w-full flex-col justify-end;
+}
+
+.navLinks {
+  @apply relative m-auto flex w-full justify-between border-l border-r px-6 py-6 md:px-12 border-color max-w-clamp-custom;
+}
+.logoTitle {
+  @apply flex select-none items-center gap-3 text-3xl font-bold tracking-wide;
+}
+.logo {
+  @apply flex items-center justify-center;
+}
+.headerText {
+  @apply hidden items-center gap-9 sm:flex;
+}
+.headerSubText {
+  @apply flex items-center space-x-2;
+}
+.dotContainer1 {
+  @apply relative mr-0.5 flex h-2 w-2;
+}
+.dotContainer2 {
+  @apply absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75;
+}
+.glowDot {
+  @apply relative inline-flex h-2 w-2 rounded-full bg-amber-500;
+}
+.availableDate {
+  @apply font-bold truncate text-sm text-green-800;
+}
+.button {
+  @apply cursor-pointer select-none rounded-2xl px-6 py-3 items-center gap-3 font-sans bg-gray-900 text-white hover:bg-gray-800 hidden md:flex;
+}
+.buttonLogo {
+  @apply flex items-center justify-center;
+}

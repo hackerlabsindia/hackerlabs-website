@@ -1,0 +1,52 @@
+.pricingContainer {
+  @apply relative px-6 pt-32 sm:px-12;
+}
+.verticalLines {
+  @apply absolute top-0 h-full w-px bg-gray-300;
+}
+.headerContainer {
+  @apply relative flex flex-col items-center gap-3 pb-20 pt-12;
+}
+.heading1 {
+  @apply font-semibold uppercase tracking-wider text-blue-500;
+}
+.heading2 {
+  @apply text-center text-4xl font-bold sm:text-5xl;
+}
+.boxContainer {
+  @apply flex flex-wrap items-center gap-12;
+}
+.box1 {
+  @apply relative min-h-[22rem] flex-1 border bg-white px-6 py-6 hover:border-gray-300 sm:px-9 min-w-[24rem]  hover:scale-105 transform transition-transform duration-300 ease-in-out;
+}
+.fixedPrice {
+  @apply inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-slate-950 focus:ring-offset-2 dark:border-slate-800 dark:focus:ring-slate-300 border-transparent bg-slate-100 text-slate-900 hover:bg-slate-100/80 dark:bg-slate-800 dark:text-slate-50 dark:hover:bg-slate-800/80 mb-3 uppercase;
+}
+.boxFooter {
+  @apply mt-12 flex items-center justify-between;
+}
+.button1 {
+  @apply cursor-pointer select-none rounded-2xl px-6 py-3 font-header border border-gray-900 bg-white text-gray-900 flex items-center gap-3 font-semibold transition-colors duration-200 ease-in-out hover:bg-gray-50;
+}
+.box2 {
+  @apply relative min-h-[22rem] flex-1 border bg-white px-6 sm:px-9 min-w-[24rem] border-blue-100 py-9 shadow hover:border-blue-200 hover:shadow hover:scale-105 transform transition-transform duration-300 ease-in-out;
+}
+.custom {
+  @apply inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-slate-950 focus:ring-offset-2 dark:border-slate-800 dark:focus:ring-slate-300 border-transparent bg-slate-100 text-slate-900 hover:bg-slate-100/80 dark:bg-slate-800 dark:text-slate-50 dark:hover:bg-slate-800/80 mb-3 uppercase;
+}
+
+.button2 {
+  @apply cursor-pointer select-none rounded-2xl px-6 py-3 font-header border border-gray-900 flex items-center gap-3 font-semibold transition-colors duration-200 ease-in-out border-none bg-blue-500 fill-white text-white hover:bg-blue-600;
+}
+.box3 {
+  @apply relative min-h-[22rem] flex-1 border bg-white px-6 py-6 hover:border-gray-300 sm:px-9 min-w-[24rem] hover:scale-105 transform transition-transform duration-300 ease-in-out;
+}
+.perHour {
+  @apply inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-slate-950 focus:ring-offset-2 dark:border-slate-800 dark:focus:ring-slate-300 border-transparent bg-slate-100 text-slate-900 hover:bg-slate-100/80 dark:bg-slate-800 dark:text-slate-50 dark:hover:bg-slate-800/80 mb-3 uppercase;
+}
+.consulting {
+  @apply font-header text-xl font-semibold;
+}
+.button3 {
+  @apply cursor-pointer select-none rounded-2xl px-6 py-3 font-header border border-gray-900 bg-white text-gray-900 flex items-center gap-3 font-semibold transition-colors duration-200 ease-in-out hover:bg-gray-50;
+}

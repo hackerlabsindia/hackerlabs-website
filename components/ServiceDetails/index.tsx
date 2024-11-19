@@ -1,26 +1,26 @@
 import React from "react";
 import content from "@hackerlabs/content/content.json";
-import "./page.css";
+import "./serviceDetails.css";
 
 const ServiceDetails = () => {
   return (
-    <div className="my-12 select-none py-8 md:my-24">
-      <div className="font-family font-bold uppercase sm:text-6xl marquee-container">
-        <div className="font-family font-bold uppercase sm:text-6xl marquee-item">
-          <div className="font-family font-bold uppercase sm:text-6xl inline-relative">
-            •{" "}
-          </div>
+    <div className="container">
+      <div className="subContainer  font-family">
+        <div className="animation">
           <div className="font-header  font-bold uppercase sm:text-6xl__item elative-inline">
-            {content.animatedText.text1} • {content.animatedText.text2} •{" "}
-            {content.animatedText.text3} • {content.animatedText.text4} •{" "}
-            {content.animatedText.text5} • {content.animatedText.text6}
+            • {content.animatedText.text1} <br />
+            <br />• {content.animatedText.text2} <br />
+            <br />• {content.animatedText.text3} <br />
+            <br />• {content.animatedText.text4} <br />
+            <br />•{content.animatedText.text5} <br />
+            <br />• {content.animatedText.text6}
           </div>
         </div>
       </div>
-      <div className="mt-32 md:mt-44">
-        <h2 className="font-header mt-6 flex justify-center gap-3 text-center text-3xl">
+      <div className="tableContainer ">
+        <h2 className="headingText1 font-header ">
           {content.tableHeading.text1}
-          <span className="border-color gradient-text relative border bg-white px-3 shadow">
+          <span className="headingText2  border-color gradient-text">
             {content.tableHeading.text2}
             <span className="text-xl">{content.tableHeading.emoji}</span>
           </span>
@@ -29,14 +29,14 @@ const ServiceDetails = () => {
         <div className="hidden justify-center lg:flex">
           <div className="flex h-10 w-0.5 justify-center bg-gray-200"></div>
         </div>
-        <div className="mx-12 mt-12 flex flex-col justify-center lg:mt-0 lg:flex-row">
+        <div className="tableSubContainer">
           <div className="min-w-[20rem] flex-1">
             <div className="hidden justify-end lg:flex">
               <div className="h-24 w-1/2 rounded-tl-xl border-l border-t border-gray-200"></div>
             </div>
             <div className="no-transform">
-              <div className="border-color  mx-3 rounded-xl border px-9 py-6">
-                <h2 className="font-family inline-flex items-center gap-2 text-xl font-semibold sm:text-2xl">
+              <div className="border-color tableSubContainer1">
+                <h2 className="font-family subContainer1-heading">
                   {content.Packages.heading}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -67,12 +67,12 @@ const ServiceDetails = () => {
           <div className="min-w-[20rem] flex-1">
             <div className="hidden justify-center lg:flex">
               <div className="h-14 w-1/2 border-r border-t border-gray-200"></div>
-              <div className="h-14 w-1/2 border-r border-t border-gray-200"></div>
+              <div className="h-14 w-1/2 border-l border-t border-gray-200"></div>
             </div>
             <div className="no-transform">
-              <div className="border-color  mx-3 rounded-xl border px-9 py-6">
-                <h2 className="font-header inline-flex items-center gap-2 text-xl font-semibold sm:text-2xl">
-                  {content.Development.heading}
+              <div className="tableSubContainer2 border-color">
+                <h2 className="font-header subContainer2-heading">
+                  {content.SoftwareDevelopment.heading}
 
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -86,7 +86,7 @@ const ServiceDetails = () => {
                 </h2>
                 <p className="mt-2 text-gray-800">
                   {" "}
-                  {content.Development.description}
+                  {content.SoftwareDevelopment.description}
                 </p>
               </div>
             </div>
@@ -97,8 +97,8 @@ const ServiceDetails = () => {
               <div className="h-14 w-1/2 border-r border-gray-200"></div>
             </div>
             <div className="no-transform">
-              <div className="border-color  mx-3 rounded-xl border px-9 py-6">
-                <h2 className="font-header inline-flex items-center gap-2 text-xl font-semibold sm:text-2xl">
+              <div className="border-color tableSubContainer3 ">
+                <h2 className="font-header subContainer3-heading">
                   {content.Consulting.heading}
 
                   <svg

@@ -1,0 +1,39 @@
+.container {
+  @apply my-12 select-none py-8 md:my-24;
+}
+.subContainer {
+  @apply font-bold uppercase sm:text-6xl marquee-container;
+}
+.animation {
+  @apply animate-fade-up animate-once animate-ease-in-out animate-normal text-center;
+}
+.tableContainer {
+  @apply mt-32 md:mt-44;
+}
+.headingText1 {
+  @apply mt-6 flex justify-center gap-3 text-center text-3xl;
+}
+.headingText2 {
+  @apply relative border bg-white px-3 shadow;
+}
+.tableSubContainer {
+  @apply mx-12 mt-12 flex flex-col justify-center lg:mt-0 lg:flex-row;
+}
+.tableSubContainer1 {
+  @apply mx-3 rounded-xl border px-9 py-6 hover:scale-105 transform transition-transform duration-300 ease-in-out;
+}
+.subContainer1-heading {
+  @apply inline-flex items-center gap-2 text-xl font-semibold sm:text-2xl;
+}
+.tableSubContainer2 {
+  @apply mx-3 rounded-xl border px-9 py-6 hover:scale-105 transform transition-transform duration-300 ease-in-out;
+}
+.subContainer2-heading {
+  @apply inline-flex items-center gap-2 text-xl font-semibold sm:text-2xl;
+}
+.tableSubContainer3 {
+  @apply mx-3 rounded-xl border px-9 py-6 hover:scale-105 transform transition-transform duration-300 ease-in-out;
+}
+.subContainer3-heading {
+  @apply inline-flex items-center gap-2 text-xl font-semibold sm:text-2xl;
+}

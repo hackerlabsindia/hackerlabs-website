@@ -1,0 +1,12 @@
+.main-container {
+  @apply relative overflow-hidden pb-12 pt-12;
+}
+.innerContainer {
+  @apply absolute -left-10 border-b border-r border-gray-200 bg-gray-800 px-12 py-9;
+}
+.textContainer {
+  @apply relative flex min-h-[20rem] items-center justify-center border-b border-t border-gray-200 bg-white px-12 py-9 text-center md:text-left;
+}
+.button {
+  @apply cursor-pointer select-none rounded-2xl px-6 py-3 flex items-center gap-3 bg-gray-900 text-white hover:bg-gray-800;
+}

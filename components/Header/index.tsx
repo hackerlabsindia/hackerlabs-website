@@ -1,19 +1,15 @@
 import React from "react";
-import "../app/globals.css";
 import Image from "next/image";
-import "./page.css";
 import content from "@hackerlabs/content/content.json";
+import "./header.css";
 
 const Header = () => {
   return (
-    <div className="border-color flex justify-center border-t">
-      <div className="flex w-full flex-col justify-end">
-        <nav className="relative m-auto flex w-full justify-between border-l border-r px-6 py-6 md:px-12 border-color max-w-clamp-custom">
-          <a
-            className="font-family flex select-none items-center gap-3 text-3xl font-bold tracking-wide"
-            href="<"
-          >
-            <div className="flex items-center justify-center">
+    <div className="headerContainer1">
+      <div className="headerContainer2">
+        <nav className="navLinks">
+          <a className="logoTitle  font-sans " href="<">
+            <div className="logo">
               <Image
                 src="/assets/hackerlabs.logo.png"
                 alt="logo"
@@ -24,18 +20,16 @@ const Header = () => {
               {content.header.appTitle}
             </div>
           </a>
-          <div className="hidden items-center gap-9 sm:flex">
-            <div className="flex items-center space-x-2">
-              <span className="relative mr-0.5 flex h-2 w-2">
-                <span className="absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
-                <span className="glow-dot relative inline-flex h-2 w-2 rounded-full bg-amber-500"></span>
+          <div className="headerText">
+            <div className="headerSubText">
+              <span className="dotContainer1">
+                <span className="dotContainer2"></span>
+                <span className="glowDot glow-dot"></span>
               </span>
-              <span className="font-bold truncate text-sm text-green-800">
-                {content.header.fontHeader}
-              </span>
+              <span className="availableDate">{content.header.fontHeader}</span>
             </div>
-            <button className="cursor-pointer select-none rounded-2xl px-6 py-3 items-center gap-3 font-family bg-gray-900 text-white hover:bg-gray-800 hidden md:flex">
-              <div className="flex items-center justify-center">
+            <button className="button">
+              <div className="buttonLogo">
                 <Image
                   src="/assets/hackerlabs.logo.png"
                   alt="logo"

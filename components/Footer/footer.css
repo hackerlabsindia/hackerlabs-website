@@ -1,0 +1,15 @@
+.footerContainer {
+  @apply relative flex min-h-[20rem] justify-center overflow-hidden bg-black md:min-h-[30rem];
+}
+.footerText {
+  @apply absolute -bottom-[4rem] left-0 hidden select-none text-[15rem] text-white opacity-15 sm:flex;
+}
+.footerSubparts {
+  @apply relative flex w-full max-w-[86rem] py-12;
+}
+.line {
+  @apply absolute top-0 h-full w-px bg-gradient-to-b from-gray-800 to-gray-600;
+}
+.logoAndLink {
+  @apply relative flex flex-col items-center justify-center gap-10 px-6 text-white sm:flex-row sm:px-0;
+}
