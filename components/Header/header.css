@@ -1,6 +1,9 @@
 .headerContainer1 {
   @apply border-color flex justify-center border-t;
 }
+.logoIcon {
+  @apply pt-0.5 text-transparent
+}
 .headerContainer2 {
   @apply flex w-full flex-col justify-end;
 }

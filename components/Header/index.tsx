@@ -2,24 +2,31 @@ import React from "react";
 import Image from "next/image";
 import content from "@hackerlabs/content/content.json";
 import "./header.css";
+import Button, { IconPosition } from "../Button";
+import Icon from "../Icon";
+import Link from "next/link";
 
 const Header = () => {
   return (
     <div className="headerContainer1">
       <div className="headerContainer2">
         <nav className="navLinks">
-          <a className="logoTitle  font-sans " href="<">
-            <div className="logo">
-              <Image
-                src="/assets/hackerlabs.logo.png"
-                alt="logo"
-                width={30}
-                height={30}
-                className="pt-0.5 text-transparent"
-              />
-              {content.header.appTitle}
-            </div>
-          </a>
+          <Link className="logoTitle  font-sans " href="/">
+            <Button
+              text={content.header.appTitle}
+              containerClass={"logo"}
+              icon={
+                <Icon
+                  iconSrc="/assets/hackerlabs.logo.png"
+                  width={30}
+                  height={30}
+                  altText="logo"
+                  containerClass="logoIcon"
+                />
+              }
+              iconPosition={IconPosition.START}
+            />
+          </Link>
           <div className="headerText">
             <div className="headerSubText">
               <span className="dotContainer1">
@@ -28,18 +35,20 @@ const Header = () => {
               </span>
               <span className="availableDate">{content.header.fontHeader}</span>
             </div>
-            <button className="button">
-              <div className="buttonLogo">
-                <Image
-                  src="/assets/hackerlabs.logo.png"
-                  alt="logo"
+            <Button
+              text={content.buttons.button1}
+              containerClass={"button"}
+              icon={
+                <Icon
+                  iconSrc="/assets/hackerlabs.logo.png"
                   width={30}
                   height={30}
-                  className="text-transparent"
+                  altText="logo"
+                  containerClass="buttonLogo"
                 />
-              </div>
-              {content.buttons.button1}
-            </button>
+              }
+              iconPosition={IconPosition.START}
+            />
           </div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
