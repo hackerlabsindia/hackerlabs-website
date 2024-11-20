@@ -6,7 +6,7 @@ const MainPage = () => {
   return (
     <div className="mainPageContainer vignette">
       <div className="textContainer">
-        <h2 className="mainText font-family">
+        <h2 className="mainText font-inter">
           {content.mainPage.topTitle}
           <br />
           <span className="designedText border-color border-light">
