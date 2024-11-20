@@ -48,6 +48,7 @@ const MainPage = () => {
               viewBox="0 -960 960 960"
               width="20px"
               fill="#000"
+              className="text-white"
             >
               <path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z"></path>
             </svg>

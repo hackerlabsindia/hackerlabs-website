@@ -28,5 +28,5 @@
   @apply cursor-pointer select-none rounded-2xl px-6 py-3 flex items-center gap-3 font-header bg-gray-900 text-white hover:bg-gray-800;
 }
 .button2 {
-  @apply cursor-pointer select-none rounded-2xl px-6 py-3 flex items-center font-header border border-gray-900 bg-white text-gray-900 gap-1;
+  @apply cursor-pointer select-none rounded-2xl px-6 py-3 flex items-center gap-3 font-header  text-white hover:bg-blend-soft-light;
 }
