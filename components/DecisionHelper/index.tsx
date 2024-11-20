@@ -22,28 +22,28 @@ const DecisionHelper = () => {
       <div className="subQuestionContainer">
         <div className="subQuestion not-transform">
           <div className="select-none flex-space-between ">
-            <span className="font-header text-xl font-medium">
+            <span className="font-inter text-xl font-medium">
               {content.subQuestions.question1}
             </span>
           </div>
         </div>
         <div className="subQuestion not-transform">
           <div className="select-none flex-space-between ">
-            <span className="font-header text-xl font-medium">
+            <span className="font-inter text-xl font-medium">
               {content.subQuestions.question2}
             </span>
           </div>
         </div>
         <div className="subQuestion not-transform">
           <div className="select-none flex-space-between ">
-            <span className="font-header text-xl font-medium">
+            <span className="font-inter text-xl font-medium">
               {content.subQuestions.question3}
             </span>
           </div>
         </div>
         <div className="subQuestion not-transform">
           <div className="select-none flex-space-between ">
-            <span className="font-header text-xl font-medium">
+            <span className="font-inter text-xl font-medium">
               {content.subQuestions.question4}
             </span>
           </div>

@@ -1,7 +1,7 @@
 .headingContainer {
   @apply relative pb-32 pt-32 md:pt-56;
 }
-.verticalLines {
+.fadeVerticalLines {
   @apply absolute top-0 h-full w-px bg-gradient-to-b from-transparent to-gray-300;
 }
 .header {
@@ -23,5 +23,5 @@
   @apply relative z-10 min-h-[20rem] border-b border-t border-gray-300 bg-white px-6 py-6 md:w-1/4;
 }
 .startButton {
-  @apply cursor-pointer select-none rounded-2xl px-6 py-3 flex items-center gap-3 font-header bg-gray-900 text-white hover:bg-gray-800;
+  @apply cursor-pointer select-none rounded-2xl px-6 py-3 flex items-center gap-3 font-inter bg-gray-900 text-white hover:bg-gray-800;
 }

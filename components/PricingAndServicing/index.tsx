@@ -17,14 +17,14 @@ const PricingAndServicing = () => {
       <div className="boxContainer">
         <div className="border-color no-transform box1">
           <div className="fixedPrice">{content.LandingPage.fixedPrice}</div>
-          <h3 className="font-header text-xl font-semibold">
+          <h3 className="font-inter font-intertext-xl font-semibold">
             {content.LandingPage.heading}
           </h3>
           <div className="mt-6 min-h-[10rem]">
             <p className="mt-3">{content.LandingPage.description}</p>
           </div>
           <div className="boxFooter">
-            <button className="button1" tabIndex={0}>
+            <button className="startButton1" tabIndex={0}>
               {content.LandingPage.button}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -43,14 +43,14 @@ const PricingAndServicing = () => {
         </div>
         <div className="box2 no-transform">
           <div className="custom">{content.softwareDevelop.custom}</div>
-          <h3 className="font-header text-xl font-semibold">
+          <h3 className="font-inter text-xl font-semibold">
             {content.softwareDevelop.heading}
           </h3>
           <div className="mt-6 min-h-[10rem]">
             <p className="mt-3">{content.softwareDevelop.description}</p>
           </div>
           <div className="boxFooter">
-            <button className="button2" tabIndex={0}>
+            <button className="talkButton2" tabIndex={0}>
               {content.softwareDevelop.button}
 
               <svg
@@ -77,7 +77,7 @@ const PricingAndServicing = () => {
             <p className="mt-3">{content.BookCall.description}</p>
           </div>
           <div className="boxFooter">
-            <button className="button3" tabIndex={0}>
+            <button className="callButton3" tabIndex={0}>
               {content.BookCall.button}
               <svg
                 xmlns="http://www.w3.org/2000/svg"

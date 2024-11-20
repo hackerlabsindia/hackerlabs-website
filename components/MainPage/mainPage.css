@@ -1,13 +1,12 @@
 .mainPageContainer {
-  @apply relative flex justify-center;
-  background-image: url("/assets/backgroundGrid.svg");
+  @apply relative flex justify-center bg-[url('/assets/backgroundGrid.svg')];
 }
 
 .textContainer {
-  @apply relative z-20 py-32 flex flex-col justify-center;
+  @apply relative py-32 flex flex-col border-t-0 border-b-0 justify-center bg-transparent;
 }
 .mainText {
-  @apply font-header max-w-[50rem] text-center text-4xl font-medium leading-[1.3] sm:text-5xl md:text-6xl md:leading-[1.3];
+  @apply font-inter max-w-[50rem] text-center text-4xl font-medium leading-[1.3] sm:text-5xl md:text-6xl md:leading-[1.3];
 }
 .designedText {
   @apply relative overflow-hidden bg-white px-3 shadow;
@@ -25,8 +24,8 @@
   @apply absolute -bottom-[0.52rem] -left-[0.9rem] z-10 flex h-4 w-7 select-none items-center justify-center text-xl text-gray-400 visible-no-transform;
 }
 .button1 {
-  @apply cursor-pointer select-none rounded-2xl px-6 py-3 flex items-center gap-3 font-header bg-gray-900 text-white hover:bg-gray-800;
+  @apply cursor-pointer select-none rounded-2xl px-6 py-3 flex items-center gap-3 font-inter bg-gray-900 text-white hover:bg-gray-800;
 }
 .button2 {
-  @apply cursor-pointer select-none rounded-2xl px-6 py-3 flex items-center gap-3 font-header  text-white hover:bg-blend-soft-light;
+  @apply cursor-pointer select-none rounded-2xl px-6 py-3 flex items-center font-inter border border-solid border-black bg-white text-gray-900 gap-1 hover:bg-transparent;
 }
