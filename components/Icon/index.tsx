@@ -1,31 +1,30 @@
-import clsx from "clsx";
-import Image from "next/image";
-
 interface IconProps {
   children?: React.ReactNode;
-  iconSrc?: string;
-  altText?: string;
+  Icon?: React.FC<React.SVGProps<SVGSVGElement>>;
   width?: number;
   height?: number;
   containerClass?: string;
+  iconClass?: string;
+  tabIndex?: number;
 }
 
 function Icon({
   children,
-  iconSrc = "",
-  altText = "icon",
-  width = 24,
-  height = 24,
+  width,
+  height,
   containerClass = "",
+  Icon,
+  iconClass,
+  tabIndex,
 }: IconProps) {
   return (
-    <div className={clsx(containerClass)}>
+    <>
       {children ? (
         children
-      ) : (
-        <Image src={iconSrc} alt={altText} width={width} height={height} />
-      )}
-    </div>
+      ) : Icon ? (
+        <Icon className={iconClass} width={width} height={height} />
+      ) : null}
+    </>
   );
 }
 

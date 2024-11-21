@@ -9,10 +9,11 @@ export enum IconPosition {
 
 interface ButtonProps {
   children?: React.ReactNode;
-  icon?: React.ReactNode;
+  icon?: JSX.Element;
   text?: string;
   iconPosition?: IconPosition;
   containerClass?: string;
+  tabIndex?: number;
 }
 
 const Button = ({
@@ -23,7 +24,7 @@ const Button = ({
   containerClass,
 }: ButtonProps) => {
   return (
-    <div className={clsx("buttonContainer", containerClass)}>
+    <div className={clsx(containerClass)}>
       {children ? (
         children
       ) : (

@@ -1,5 +1,9 @@
 import React from "react";
 import content from "@hackerlabs/content/content.json";
+import Button from "../Button";
+import Icon from "../Icon";
+import { Submit } from "@hackerlabs/icons";
+import Input from "../InputFields";
 
 const ContactForm = () => {
   return (
@@ -12,20 +16,20 @@ const ContactForm = () => {
         <div className="grid gap-3">
           <div className="inputFields">
             <label className="name">{content.ContactForm.name}</label>
-            <input
+            <Input
               type="name"
-              className="nameInputField"
+              inputClass="nameInputField"
               id="name"
-              placeholder="Your Name"
+              placeHolder="Your Name"
             />
           </div>
           <div className="inputFields">
             <label className="email">{content.ContactForm.email}</label>
-            <input
+            <Input
               type="email"
-              className="emailInputField"
+              inputClass="emailInputField"
               id="email"
-              placeholder="Email"
+              placeHolder="Email"
             />
           </div>
           <div className="inputFields">
@@ -130,29 +134,19 @@ const ContactForm = () => {
           </div>
           <div className="inputFields">
             <label className="questions">{content.ContactForm.helpTab}</label>
-            <textarea
-              className="textArea"
-              placeholder="Type your message here."
+            <Input
+              inputClass="textArea"
+              placeHolder="Type your message here."
               id="message"
-            ></textarea>
+            />
           </div>
         </div>
         <div className="min-h-10 pt-3"></div>
-        <div className=""></div>
         <div className="mt-12 flex justify-center">
-          <button className="submitButton" tabIndex={0}>
+          <Button containerClass={"submitButton"} tabIndex={0}>
             {content.ContactForm.button}
-
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#e8eaed"
-            >
-              <path d="M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z"></path>
-            </svg>
-          </button>
+            <Icon Icon={Submit} width={20} height={20} />
+          </Button>
         </div>
       </div>
     </div>
