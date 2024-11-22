@@ -14,6 +14,9 @@ import IntroCall from "@assets/introCall.svg";
 import RequirementIcon from "@assets/requirementIcon.svg";
 import DevelopmentIcon from "@assets/developmentIcon.svg";
 import SupportIcon from "@assets/supportIcon.svg";
+import PackagesIcon from "@assets/packagesIcon.svg";
+import SoftwareDevIcon from "@assets/softwareDevIcon.svg";
+import ConsultingIcon from "@assets/consultingIcon.svg";
 
 export {
   DottedLine,
@@ -32,4 +35,7 @@ export {
   RequirementIcon,
   DevelopmentIcon,
   SupportIcon,
+  PackagesIcon,
+  SoftwareDevIcon,
+  ConsultingIcon,
 };

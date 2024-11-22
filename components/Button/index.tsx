@@ -14,6 +14,8 @@ interface ButtonProps {
   iconPosition?: IconPosition;
   containerClass?: string;
   tabIndex?: number;
+  label?: string;
+  onClick?: () => void;
 }
 
 const Button = ({
