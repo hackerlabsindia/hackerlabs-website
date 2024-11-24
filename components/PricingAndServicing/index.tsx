@@ -1,9 +1,10 @@
 import React from "react";
 
 import content from "@hackerlabs/content/content.json";
-import Button from "../Button";
-import Icon from "../Icon";
 import { ArrowRight, CallIcon, LetsTalk } from "@hackerlabs/icons";
+import ServiceCardContainer from "../ServiceCardComponent";
+
+const serviceCardProperties = [ArrowRight, LetsTalk, CallIcon];
 
 const PricingAndServicing = () => {
   return (
@@ -18,63 +19,18 @@ const PricingAndServicing = () => {
         </div>
       </div>
       <div className="boxContainer">
-        <div className="border-color no-transform box1">
-          <div className="fixedPrice">{content.LandingPage.fixedPrice}</div>
-          <h3 className="font-inter font-intertext-xl font-semibold">
-            {content.LandingPage.heading}
-          </h3>
-          <div className="mt-6 min-h-[10rem]">
-            <p className="mt-3">{content.LandingPage.description}</p>
-          </div>
-          <div className="boxFooter">
-            <Button containerClass={"startButton1"} tabIndex={0}>
-              {content.LandingPage.button}
-              <Icon Icon={ArrowRight} width={20} height={20} />
-            </Button>
-            <div className="flex gap-1.5">
-              {content.LandingPage.from}
-              <p className="font-semibold"> {content.LandingPage.price}</p>
-            </div>
-          </div>
-        </div>
-        <div className="box2 no-transform">
-          <div className="custom">{content.softwareDevelop.custom}</div>
-          <h3 className="font-inter text-xl font-semibold">
-            {content.softwareDevelop.heading}
-          </h3>
-          <div className="mt-6 min-h-[10rem]">
-            <p className="mt-3">{content.softwareDevelop.description}</p>
-          </div>
-          <div className="boxFooter">
-            <Button containerClass={"talkButton2"} tabIndex={0}>
-              {content.softwareDevelop.button}
-              <Icon Icon={LetsTalk} width={20} height={20} />
-            </Button>
-            <div className="flex gap-1.5">
-              {content.softwareDevelop.from}
+        {content.ServiceCard.map((serviceCard, index) => {
+          const ServiceIcon = serviceCardProperties[index];
 
-              <p className="font-semibold"> {content.softwareDevelop.price}</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="border-color box3 no-transform">
-          <div className="perHour">{content.BookCall.perHour}</div>
-          <h3 className="consulting">{content.BookCall.heading}</h3>
-          <div className="mt-6 min-h-[10rem]">
-            <p className="mt-3">{content.BookCall.description}</p>
-          </div>
-          <div className="boxFooter">
-            <Button containerClass={"callButton3"} tabIndex={0}>
-              {content.BookCall.button}
-              <Icon Icon={CallIcon} width={20} height={20} />
-            </Button>
-            <div className="flex gap-1.5">
-              {content.BookCall.from}
-              <p className="font-semibold">{content.BookCall.price}</p>
-            </div>
-          </div>
-        </div>
+          return (
+            <ServiceCardContainer
+              key={index}
+              serviceCard={serviceCard}
+              iconComponent={<ServiceIcon />}
+              highlight={index === 1}
+            />
+          );
+        })}
       </div>
     </div>
   );

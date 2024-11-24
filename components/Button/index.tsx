@@ -7,7 +7,7 @@ export enum IconPosition {
   END = "END",
 }
 
-interface ButtonProps {
+export interface ButtonProps {
   children?: React.ReactNode;
   icon?: JSX.Element;
   text?: string;

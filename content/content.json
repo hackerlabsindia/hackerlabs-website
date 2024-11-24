@@ -35,7 +35,6 @@
   "Cards": [
     {
       "title": "Packages",
-
       "description": "Easy, set prices for a simple SaaS, landing page or website."
     },
     {
@@ -73,30 +72,32 @@
     "text1": "Let's Work together",
     "text2": "Our services:"
   },
-  "LandingPage": {
-    "fixedPrice": "Fixed Price",
-    "heading": "Landing Page",
-    "description": "We create a fully fledged landing page that converts visitors into customers. Custom design, copywriting, and development - we don't use templates here.",
-    "button": "Get Started",
-    "from": "from",
-    "price": "$2000"
-  },
-  "softwareDevelop": {
-    "custom": "Custom",
-    "heading": "Software Development",
-    "description": "We will work closely to understand your goals and create an MVP for your next big SaaS.You also have the option for ongoing support & development to scale even further!",
-    "button": "Let's talk",
-    "from": "from",
-    "price": "$2500"
-  },
-  "BookCall": {
-    "perHour": "Per hour",
-    "heading": "Consulting / Mentoring",
-    "description": "Need help with your career path or startup? Let's talk about your goals and how we can help you achieve them.",
-    "button": "Book a call",
-    "from": "from",
-    "price": "$50"
-  },
+  "ServiceCard": [
+    {
+      "tag": "Fixed Price",
+      "title": "Landing Page",
+      "description": "We create a fully fledged landing page that converts visitors into customers. Custom design, copywriting, and development - we don't use templates here.",
+      "button": "Get Started",
+      "text": "from",
+      "price": "$2000"
+    },
+    {
+      "tag": "Custom",
+      "title": "Software Development",
+      "description": "We will work closely to understand your goals and create an MVP for your next big SaaS.You also have the option for ongoing support & development to scale even further!",
+      "button": "Let's talk",
+      "text": "from",
+      "price": "$2500"
+    },
+    {
+      "tag": "Per hour",
+      "title": "Consulting / Mentoring",
+      "description": "Need help with your career path or startup? Let's talk about your goals and how we can help you achieve them.",
+      "button": "Book a call",
+      "text": "from",
+      "price": "$50"
+    }
+  ],
   "Question": {
     "heading": "Still wondering if we're right for you?"
   },

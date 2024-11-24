@@ -1,32 +1,36 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
+import { useFaqContext } from "../DecisionHelper/FaqContext";
 
-interface QuestionProps {
+export interface QuestionProps {
   question: string;
   answer: string;
+  index: number;
 }
 
-const AccordionItem = ({ question, answer }: QuestionProps) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleAccordion = () => {
-    setIsOpen(!isOpen);
-  };
+const FaqItem = ({ question, answer, index }: QuestionProps) => {
+  const { openFaqIndex, toggleFaq } = useFaqContext();
+  const isOpen = openFaqIndex === index;
 
   return (
-    <div>
-      <button
-        onClick={toggleAccordion}
-        // className="w-full text-left p-4 font-bold text-lg focus:outline-none"
-      >
-        {question}
-      </button>
-      {isOpen && <div>{answer}</div>}
-    </div>
+    <>
+      <div className="subQuestion not-transform">
+        <div className="select-none flex-space-between ">
+          <button
+            onClick={() => toggleFaq(index)}
+            className="font-inter text-xl font-medium"
+          >
+            {question}
+          </button>
+        </div>
+        <section className="bg-white h-auto">
+          {isOpen && <div className="mt-4 text-gray-800">{answer}</div>}
+        </section>
+      </div>
+    </>
   );
 };
 
-export default AccordionItem;
+export default FaqItem;
 
-// className="p-4 text-gray-700"
