@@ -129,15 +129,13 @@
 
   "ContactForm": {
     "heading": "Ready to get started?",
-    "name": "Name",
-    "email": "Email",
+
     "question": "What's your budget? (optional)",
     "option1": " I'm not sure",
     "option2": "$1,000 - $5,000",
     "option3": "$5,000 - $10,000",
     "option4": "More than $10,000",
-    "helpTab": "How can I help you?",
-    "button": "Submit"
+    "helpTab": "How can I help you?"
   },
   "StartProject": {
     "text1": "Kickstart your dream project today.",

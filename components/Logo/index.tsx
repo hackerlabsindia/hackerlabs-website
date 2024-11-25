@@ -15,20 +15,10 @@ interface LogoProps {
   logoClass?: string;
 }
 
-function Logo({
-  children,
-  Logo,
-  logoPosition,
-  logoContainerClass,
-  logoClass,
-}: LogoProps) {
+function Logo({ logoContainerClass }: LogoProps) {
   return (
     <div className={clsx(logoContainerClass)}>
-      {children ? (
-        children
-      ) : (
-        <Image alt="logo" src={HackerlabsLogo} width={30} height={30} />
-      )}
+      <Image alt="logo" src={HackerlabsLogo} width={30} height={30} />
     </div>
   );
 }

@@ -28,13 +28,11 @@ const ProcessFlowCard = ({
         <br />
         <br />
       </p>
-
-      <Button
-        containerClass={highlight ? "startButton" : "opacity-0"}
-        tabIndex={0}
-      >
-        {"Start a Project"}
-      </Button>
+      {highlight && (
+        <Button containerClass={"startButton"} tabIndex={0}>
+          {"Start a Project"}
+        </Button>
+      )}
       {iconComponent}
     </div>
   );
