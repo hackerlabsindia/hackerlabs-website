@@ -6,5 +6,7 @@
         "lucide",
         "sepecialise",
         "specialise"
-    ]
+    ],
+    "editor.formatOnSaveMode": "modifications",
+    "editor.formatOnSave": true
 }

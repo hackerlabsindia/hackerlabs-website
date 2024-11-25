@@ -1,0 +1,15 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 1358 1"
+>
+    <line
+        x1="100%"
+        y1="0.5"
+        x2="0"
+        y2="0.5"
+        stroke="#eceaea"
+        stroke-opacity="1"
+        stroke-dasharray="4, 4"
+    />
+</svg>

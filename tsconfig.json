@@ -19,7 +19,8 @@
       }
     ],
     "paths": {
-      "@hackerlabs/*": ["./*"]
+      "@hackerlabs/*": ["./*"],
+      "@assets/*": ["./public/assets/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
