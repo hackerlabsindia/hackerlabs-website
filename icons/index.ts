@@ -17,6 +17,7 @@ import SupportIcon from "@assets/supportIcon.svg";
 import PackagesIcon from "@assets/packagesIcon.svg";
 import SoftwareDevIcon from "@assets/softwareDevIcon.svg";
 import ConsultingIcon from "@assets/consultingIcon.svg";
+import InputOptionIcon from "@assets/inputOption1.svg";
 
 export {
   DottedLine,
@@ -38,4 +39,5 @@ export {
   PackagesIcon,
   SoftwareDevIcon,
   ConsultingIcon,
+  InputOptionIcon,
 };

@@ -51,23 +51,29 @@
     "text1": "The Process",
     "text2": "How we working"
   },
-  "IntroductoryCall": {
-    "heading": "Introductory Call",
-    "description": "In a 30 min call, we will discuss how can we provide value to you and your business.",
-    "button": "Start a Project"
-  },
-  "Requirement": {
-    "heading": "Requirement & Scope",
-    "description": "Our team will gather all the information needed to start the project and provide you with a proposal Once you accept the proposal, we will start working on the project."
-  },
-  "Development": {
-    "heading": "Development",
-    "description": "The team work in iterations with frequent communication with you in order to deliver the best possible result."
-  },
-  "Support": {
-    "heading": "Handover & Support",
-    "description": "After you get the result, you have the option of ongoing maintenance and development of new features."
-  },
+
+  "ProcessFlowCards": [
+    {
+      "text": "01",
+      "title": "Introductory Call",
+      "description": "In a 30 min call, we will discuss how can we provide value to you and your business."
+    },
+    {
+      "text": "02",
+      "title": "Requirement & Scope",
+      "description": "Our team will gather all the information needed to start the project and provide you with a proposal Once you accept the proposal, we will start working on the project."
+    },
+    {
+      "text": "03",
+      "title": "Development",
+      "description": "The team work in iterations with frequent communication with you in order to deliver the best possible result."
+    },
+    {
+      "text": "04",
+      "title": "Handover & Support",
+      "description": "After you get the result, you have the option of ongoing maintenance and development of new features."
+    }
+  ],
   "OurServices": {
     "text1": "Let's Work together",
     "text2": "Our services:"

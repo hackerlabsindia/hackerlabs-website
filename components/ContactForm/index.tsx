@@ -1,11 +1,75 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import content from "@hackerlabs/content/content.json";
 import Button from "../Button";
 import Icon from "../Icon";
-import { Submit } from "@hackerlabs/icons";
+import { InputOptionIcon, Submit } from "@hackerlabs/icons";
 import Input from "../InputFields";
 
-const ContactForm = () => {
+interface Option {
+  label: string;
+  value: string;
+}
+
+interface DynamicOptionsProps {
+  options: Option[];
+  onOptionChange: (selectedValue: string) => void;
+}
+
+const DynamicOptions: React.FC<DynamicOptionsProps> = ({
+  options,
+  onOptionChange,
+}) => {
+  const [selectedOption, setSelectedOption] = useState<string>(
+    options[0]?.value || ""
+  );
+
+  const handleOptionChange = (value: string) => {
+    setSelectedOption(value);
+    onOptionChange(value);
+  };
+
+  return (
+    <div
+      role="radiogroup"
+      aria-required="false"
+      dir="ltr"
+      className="grid gap-3 no-outline"
+    >
+      {options.map((option: Option) => (
+        <div key={option.value} className="flex items-center space-x-2">
+          <button
+            type="button"
+            role="radio"
+            aria-checked={selectedOption === option.value}
+            className={`options ${
+              selectedOption === option.value ? "checked" : ""
+            }`}
+            onClick={() => handleOptionChange(option.value)}
+          >
+            <span className="flex items-center justify-center">
+              {selectedOption === option.value ? (
+                <InputOptionIcon
+                  viewBox="0 0 24 24"
+                  className="lucide lucide-circle h-2.5 w-2.5 fill-current text-current"
+                />
+              ) : (
+                <span className="circle-placeholder"></span>
+              )}
+            </span>
+          </button>
+          <label className="option-text">{option.label}</label>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+const ContactForm: React.FC = () => {
+  const handleOptionChange = (selectedValue: string) => {
+    console.log("Selected option:", selectedValue);
+  };
+
   return (
     <div className="contactContainer" id="contact-form">
       <div className="left-1/4 lines"></div>
@@ -33,104 +97,19 @@ const ContactForm = () => {
             />
           </div>
           <div className="inputFields">
-            <div
-              role="radiogroup"
-              aria-required="false"
-              dir="ltr"
-              className="grid gap-3 no-outline"
-              tabIndex={0}
-            >
-              <label className="questions">
-                {content.ContactForm.question}
-              </label>
-              <div className="flex items-center space-x-2">
-                <button
-                  type="button"
-                  role="radio"
-                  aria-checked="true"
-                  data-state="checked"
-                  value="not-sure"
-                  className="options"
-                  id="not-sure"
-                  tabIndex={-1}
-                  data-radix-collection-item
-                >
-                  <span
-                    className="flex items-center justify-center"
-                    data-state="checked"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="lucide lucide-circle h-2.5 w-2.5 fill-current text-current"
-                    >
-                      <circle cx="12" cy="12" r="10"></circle>
-                    </svg>
-                  </span>
-                </button>
-                <label className="option-text">
-                  {content.ContactForm.option1}
-                </label>
-              </div>
-
-              <div className="flex items-center space-x-2">
-                <button
-                  type="button"
-                  role="radio"
-                  aria-checked="false"
-                  data-state="unchecked"
-                  value="1000-5000"
-                  className="options"
-                  id="1000-5000"
-                  tabIndex={-1}
-                  data-radix-collection-item
-                ></button>
-                <label className="option-text">
-                  {content.ContactForm.option2}
-                </label>
-              </div>
-
-              <div className="flex items-center space-x-2">
-                <button
-                  type="button"
-                  role="radio"
-                  aria-checked="false"
-                  data-state="unchecked"
-                  value="5000-10000"
-                  className="options"
-                  id="5000-10000"
-                  tabIndex={-1}
-                  data-radix-collection-item
-                ></button>
-                <label className="option-text">
-                  {content.ContactForm.option3}
-                </label>
-              </div>
-
-              <div className="flex items-center space-x-2">
-                <button
-                  type="button"
-                  role="radio"
-                  aria-checked="false"
-                  data-state="unchecked"
-                  value="more-than-10000"
-                  className="options"
-                  id="more-than-10000"
-                  tabIndex={-1}
-                  data-radix-collection-item
-                ></button>
-                <label className="option-text">
-                  {content.ContactForm.option4}
-                </label>
-              </div>
-            </div>
+            <label className="questions">{content.ContactForm.question}</label>
+            <DynamicOptions
+              options={[
+                { label: content.ContactForm.option1, value: "not-sure" },
+                { label: content.ContactForm.option2, value: "1000-5000" },
+                { label: content.ContactForm.option3, value: "5000-10000" },
+                {
+                  label: content.ContactForm.option4,
+                  value: "more-than-10000",
+                },
+              ]}
+              onOptionChange={handleOptionChange}
+            />
           </div>
           <div className="inputFields">
             <label className="questions">{content.ContactForm.helpTab}</label>

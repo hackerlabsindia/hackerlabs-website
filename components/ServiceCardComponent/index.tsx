@@ -16,7 +16,7 @@ const ServiceCardContainer = ({
       <ServiceCard
         title={serviceCard.title}
         description={serviceCard.description}
-        tag={serviceCard.text}
+        tag={serviceCard.tag}
         text={serviceCard.text}
         button={serviceCard.button}
         price={serviceCard.price}

@@ -1,6 +1,5 @@
 import React from "react";
 import content from "@hackerlabs/content/content.json";
-import Button from "../Button";
 import Icon from "../Icon";
 import {
   BouncingIcon1,
@@ -12,6 +11,15 @@ import {
   RequirementIcon,
   SupportIcon,
 } from "@hackerlabs/icons";
+
+import ProcessFlowContainer from "../ProcessFlowContainer";
+
+const ProcessFlowIcons = [
+  IntroCall,
+  RequirementIcon,
+  SupportIcon,
+  DevelopmentIcon,
+];
 
 const ProcessFlow = () => {
   return (
@@ -37,55 +45,18 @@ const ProcessFlow = () => {
           <h2 className="heading2">{content.ProcessOfWorking.text2}</h2>
         </div>
       </div>
-      <div className="boxContainer gap-0">
-        <div className="boxes group translate-up">
-          <span className="my-3 block font-mono text-sm text-gray-500">01</span>
-          <h3 className="text-xl font-semibold">
-            {" "}
-            {content.IntroductoryCall.heading}
-          </h3>
-          <p className="mt-3">
-            {content.IntroductoryCall.description}
-
-            <br />
-            <br />
-          </p>
-          <Button containerClass={"startButton"} tabIndex={0}>
-            {content.IntroductoryCall.button}
-          </Button>
-          <Icon Icon={IntroCall} iconClass="intro-call" />
-        </div>
-        <div className="group boxes translate-up">
-          <span className="my-3 block font-mono text-sm text-gray-500">02</span>
-          <h3 className="font-inter text-xl font-semibold">
-            {content.Requirement.heading}
-          </h3>
-          <p className="mt-3">{content.Requirement.description}</p>
-          <Icon Icon={RequirementIcon} iconClass="requirement-icon" />
-        </div>
-        <div className="group boxes translate-up">
-          <span className="my-3 block font-mono text-sm text-gray-500">03</span>
-          <h3 className="font-inter text-xl font-semibold">
-            {content.Development.heading}
-          </h3>
-          <p className="mt-3">
-            {content.Development.description}
-            <br />
-          </p>
-          <Icon Icon={DevelopmentIcon} iconClass="development-icon" />
-        </div>
-        <div className="group boxes translate-up">
-          <span className="my-3 block font-mono text-sm text-gray-500">04</span>
-          <h3 className="font-inter text-xl font-semibold">
-            {content.Support.heading}
-          </h3>
-          <p className="mt-3">
-            {content.Support.description}
-
-            <br />
-          </p>
-          <Icon Icon={SupportIcon} iconClass="support-icon" />
-        </div>
+      <div className="flex flex-wrap md:flex-nowrap">
+        {content.ProcessFlowCards.map((processFlowCard, index) => {
+          const ProcessIcon = ProcessFlowIcons[index];
+          return (
+            <ProcessFlowContainer
+              key={index}
+              processFlowCard={processFlowCard}
+              iconComponent={<ProcessIcon className="icon" />}
+              highlight={index === 0}
+            />
+          );
+        })}
       </div>
     </div>
   );

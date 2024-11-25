@@ -1,4 +1,5 @@
 import React from "react";
+
 interface InputProps {
   children?: React.ReactNode;
   Input?: () => React.ReactNode;
@@ -6,15 +7,17 @@ interface InputProps {
   inputClass?: string;
   id?: string;
   placeHolder?: string;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 function Input({
   children,
   Input,
-  type,
-  inputClass,
+  type = "text",
+  inputClass = "",
   id,
   placeHolder,
+  onChange,
 }: InputProps) {
   return (
     <>
@@ -28,6 +31,7 @@ function Input({
           type={type}
           className={inputClass}
           placeholder={placeHolder}
+          onChange={onChange}
         />
       )}
     </>
