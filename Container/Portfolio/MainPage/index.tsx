@@ -37,6 +37,15 @@ const PortfolioMainPage = () => {
             key={index}
             projectCards={projectCards}
             projectKey={projectCards.key}
+            highlight={
+              index === 0 ||
+              index === 2 ||
+              index === 3 ||
+              index === 4 ||
+              index === 5 ||
+              index === 6 ||
+              index === 8
+            }
           />
         );
       })}

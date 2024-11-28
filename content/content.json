@@ -152,19 +152,21 @@
   "Projects": [
     {
       "key": "apollo",
-      "title": "Apollo 24|7 🔗",
+      "title": "Apollo 24|7",
       "description": "Apollo 24|7 is India's leading medical app with over 10 million downloads and a 4.5-star rating. It offers medicine delivery, home lab tests with prompt reports, and doctor consultations across 55+ specialties. Additional features include an AI symptom checker and health blogs.",
       "bulletPoints": [
         "🚀 Optimized app performance using profiling tools to boost speed and responsiveness.",
         "🎯 Enhanced user journey by integrating AppsFlyer and CleverTap for better retention.",
         "🎨 Developed a design scaling solution for consistent UI across devices"
       ],
-      "link": "https://play.google.com/store/apps/details?id=com.apollo.patientapp&hl=en_IN",
-      "linkName": "🔗 App link"
+      "androidLink": "https://play.google.com/store/apps/details?id=com.apollo.patientapp&hl=en_IN",
+      "androidLinkName": "android link 🔗 ",
+      "iosLink": "https://apps.apple.com/in/app/apollo-247-health-medicine/id1496740273",
+      "iosLinkName": "ios link 🔗"
     },
     {
       "key": "cityMallOnline",
-      "title": "Citymall Online 🔗",
+      "title": "Citymall Online",
       "description": " CityMall Online is a leading Indian e-commerce app (10M+ downloads, 4.5+ rating) offering a wide product range at competitive prices with user-friendly navigation, secure checkout, free delivery, and excellent support.",
       "bulletPoints": [
         "🛠️ Led full-stack development from scratch.",
@@ -172,12 +174,14 @@
         "🚚 Developed delivery module for real-time tracking.",
         "🔗 Integrated third-party APIs.📦 Designed order flow for seamless processing."
       ],
-      "link": "https://play.google.com/store/apps/details?id=live.citymall.customer.prod&hl=en_IN",
-      "linkName": "🔗 App link"
+      "androidLink": "https://play.google.com/store/apps/details?id=live.citymall.customer.prod&hl=en_IN",
+      "androidLinkName": "android link 🔗",
+      "iosLink": "",
+      "iosLinkName": "ios link 🔗"
     },
     {
       "key": "vestedFinance",
-      "title": "Vested Finance 🔗",
+      "title": "Vested Finance",
       "description": " Vested Finance is an investment platform for Indian users to access U.S. stocks, ETFs, P2P lending, INR bonds, and solar projects. With 500K+ downloads and a 4.5-star rating, it offers real-time market data and a user-friendly interface for global portfolio diversification.",
       "bulletPoints": [
         "🗄️ Developed Redis caching to boost performance.",
@@ -185,12 +189,14 @@
         "📈 Designed Instrument Page for info and comparison.",
         "🎨 Led UI development and API integration.🔐 Implemented two-factor authentication."
       ],
-      "link": "https://play.google.com/store/apps/details?id=com.vested.investing.android&hl=en_IN",
-      "linkName": "🔗 App link"
+      "androidLink": "https://play.google.com/store/apps/details?id=com.vested.investing.android&hl=en_IN",
+      "androidLinkName": "android link 🔗",
+      "iosLink": "https://apps.apple.com/in/app/vested-us-stocks-investing/id1478145933",
+      "iosLinkName": "ios link 🔗"
     },
     {
       "key": "beehive",
-      "title": "Beehive 🔗",
+      "title": "Beehive",
       "description": " Beehive is a secure app that helps busy parents manage households efficiently by centralizing tasks, schedules, and providing personalized content with data-driven insights—all accessible anywhere.",
       "bulletPoints": [
         "🚀 Optimized app performance using profilers; implemented caching to reduce API calls.",
@@ -198,12 +204,14 @@
         "🔔 Integrated push notifications and deep linking with AppsFlyer and Appcues.",
         "🇺🇸 Ensured HIPAA compliance for an American client."
       ],
-      "link": "https://play.google.com/store/apps/details?id=com.beehive.production",
-      "linkName": "🔗 App link"
+      "androidLink": "https://play.google.com/store/apps/details?id=com.beehive.production",
+      "androidLinkName": "android link 🔗",
+      "iosLink": "https://apps.apple.com/us/app/beehive-parenting-simplified/id6446121415",
+      "iosLinkName": "ios link 🔗"
     },
     {
       "key": "audvice",
-      "title": "Audvice 🔗",
+      "title": "Audvice",
       "description": " Audvice is a GDPR-compliant voice messaging platform developed for an Austrian client to enhance corporate communication. It allows users to record, edit, and share information via playlists, streamlining processes like onboarding and project management.",
       "bulletPoints": [
         "🚀 Developed the app from scratch with seamless UI and API integration.",
@@ -212,12 +220,14 @@
         "🔗 Integrated deep linking with AppsFlyer.☁️ Created AWS Lambda functions for audio transcription.",
         "🛡️ Ensured GDPR compliance throughout."
       ],
-      "link": "https://play.google.com/store/apps/details?id=com.audvice.audvice&hl=en_IN",
-      "linkName": "🔗 App link"
+      "androidLink": "https://play.google.com/store/apps/details?id=com.audvice.audvice&hl=en_IN",
+      "androidLinkName": "android link 🔗",
+      "iosLink": "https://apps.apple.com/in/app/audvice/id1440810304",
+      "iosLinkName": "ios link 🔗"
     },
     {
       "key": "amf",
-      "title": "Malý fotbal 🔗",
+      "title": "Malý fotbal",
       "description": " Malý fotbal is a mobile app delivering the latest small-scale football news directly to fans. Users stay updated on competitions, never missing a goal or headline. By adding favorite clubs or leagues, they receive real-time updates and never miss any action.",
       "bulletPoints": [
         " 🚀 Developed the app from scratch using Expo and React Native for cross-platform use.",
@@ -225,12 +235,14 @@
         "⚽ Integrated APIs for live scores, match schedules, and standings.",
         " 💾 Implemented Redis caching to optimize performance after matches."
       ],
-      "link": "https://play.google.com/store/apps/details?id=com.amf&hl=en_AU",
-      "linkName": "🔗 App link"
+      "androidLink": "https://play.google.com/store/apps/details?id=com.amf&hl=en_AU",
+      "androidLinkName": "android link 🔗",
+      "iosLink": "https://apps.apple.com/us/app/mal%C3%BD-fotbal/id1665660869",
+      "iosLinkName": "ios link 🔗"
     },
     {
       "key": "loonoy",
-      "title": "Loonoy 🔗",
+      "title": "Loonoy",
       "description": "Loonoy is the first smart baby cradle with automatic rocking and video monitoring, controllable via a mobile app for real-time cradle control—ensuring baby's comfort and safety.",
       "bulletPoints": [
         "🚀 Developed the mobile app from scratch, creating an intuitive user experience.",
@@ -238,12 +250,14 @@
         "🖥️ Built features to display cradle data, allowing users to adjust settings and view live video.",
         "🇨🇿 Developed for a Czech Republic client, customizing features to meet market needs and compliance standards."
       ],
-      "link": "https://play.google.com/store/apps/details?id=com.loonoy_mobile",
-      "linkName": "🔗 App link"
+      "androidLink": "https://play.google.com/store/apps/details?id=com.loonoy_mobile",
+      "androidLinkName": "android link 🔗",
+      "iosLink": "https://apps.apple.com/cz/app/loonoy/id1596907346",
+      "iosLinkName": "ios link 🔗"
     },
     {
       "key": "cityMall",
-      "title": "Citymall Partner 🔗",
+      "title": "Citymall Partner",
       "description": "CityMall Partner App expands CityMall's ecosystem by empowering affiliates to place orders on behalf of their customers, enhancing reach and user engagement through seamless partner-platform interactions.",
       "bulletPoints": [
         "🚀 Led development from scratch, creating a robust and user-friendly app.",
@@ -251,12 +265,14 @@
         "📩 Developed a Node.js microservice for notifications via OneSignal.",
         "⚙️ Integrated APIs and set up CI/CD pipeline with AppCenter."
       ],
-      "link": "https://play.google.com/store/apps/details?id=com.citymall.app&hl=en_IN",
-      "linkName": "🔗 App link"
+      "androidLink": "https://play.google.com/store/apps/details?id=com.citymall.app&hl=en_IN",
+      "androidLinkName": "android link 🔗",
+      "iosLink": "",
+      "iosLinkName": "ios link 🔗"
     },
     {
       "key": "gutesleben",
-      "title": "Gutes Leben 🔗",
+      "title": "Gutes Leben",
       "description": "Gutesleben is an app for the NGO Katholischer Familienverband Tirol, providing resources and information to improve lives, promote well-being, and support the community.",
       "bulletPoints": [
         "🚀 Full-Stack Development: Led development of mobile app, CMS, and server.",
@@ -265,12 +281,14 @@
         "🖥️ Custom CMS: Developed for NGO staff to easily manage content.",
         "💾 Backend Server: Created with Express, TypeScript, and MongoDB for robust APIs."
       ],
-      "link": "https://apps.apple.com/us/app/gutes-leben/id1541165124",
-      "linkName": "🔗 App link"
+      "androidLink": "https://apps.apple.com/us/app/gutes-leben/id1541165124",
+      "androidLinkName": "android link 🔗",
+      "iosLink": "https://apps.apple.com/us/app/gutes-leben/id1541165124",
+      "iosLinkName": "ios link 🔗"
     },
     {
       "key": "fintechClone",
-      "title": "Fintech Clone 🔗",
+      "title": "Fintech Clone",
       "description": " Revolut Fintech Clone is a personal project demonstrating my React Native skills. Inspired by Revolut, it replicates modern fintech app features using advanced technologies.",
       "bulletPoints": [
         "🚀 Built from scratch using Expo and Expo Router.",
@@ -280,20 +298,24 @@
         "📱 Created native menus using Zeego.",
         "🌐 Integrated CoinMarketCap API for real-time crypto prices."
       ],
-      "link": "https://github.com/praveen-me/fintech-clone",
-      "linkName": "🔗 App link"
+      "androidLink": "https://github.com/praveen-me/fintech-clone",
+      "androidLinkName": "Github link 🔗",
+      "iosLink": "",
+      "iosLinkName": "ios link 🔗"
     },
     {
       "key": "rnFashionApp",
-      "title": "RN Fashion App 🔗",
+      "title": "RN Fashion App",
       "description": "RN Fashion App is a personal project showcasing my React Native expertise. It's a fashion app clone featuring beautiful animations and gestures, demonstrating advanced mobile development techniques and a keen eye for UI/UX design.",
       "bulletPoints": [
         "🚀 Built the app from scratch using Expo and React Native, establishing the entire structure and workflow.",
         "🎨 Implemented intricate animations with React Native Reanimated for a smooth, engaging user experience.",
         "🔐 Utilized Firebase for user authentication and data storage, ensuring a secure and efficient backend."
       ],
-      "link": "https://play.google.com/store/apps/details?id=com.rn_fashion_app&hl=en_IN",
-      "linkName": "🔗 App link"
+      "androidLink": "https://play.google.com/store/apps/details?id=com.rn_fashion_app&hl=en_IN",
+      "androidLinkName": "android link 🔗",
+      "iosLink": "",
+      "iosLinkName": "ios link 🔗"
     }
   ]
 }

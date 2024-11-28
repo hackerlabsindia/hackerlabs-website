@@ -29,12 +29,14 @@ const ProjectImages = {
 };
 
 export interface ProjectContainerProps {
-  projectCards: Omit<ProjectCardProps, "img">;
+  projectCards: Omit<ProjectCardProps, "img" | "highlight">;
   projectKey: string;
+  highlight: boolean;
 }
 const ProjectContainer = ({
   projectCards,
   projectKey,
+  highlight,
 }: ProjectContainerProps) => {
   return (
     <>
@@ -43,7 +45,11 @@ const ProjectContainer = ({
         description={projectCards.description}
         bulletPoints={projectCards.bulletPoints}
         img={ProjectImages[projectKey as keyof typeof ProjectImages]}
-        link={projectCards.link}
+        androidLink={projectCards.androidLink}
+        androidLinkName={projectCards.androidLinkName}
+        highlight={highlight}
+        iosLink={projectCards.iosLink}
+        iosLinkName={projectCards.iosLinkName}
       />
     </>
   );
