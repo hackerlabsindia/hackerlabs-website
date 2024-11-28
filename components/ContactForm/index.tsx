@@ -14,11 +14,13 @@ interface Option {
 interface DynamicOptionsProps {
   options: Option[];
   onOptionChange: (selectedValue: string) => void;
+  className?: string;
 }
 
 const DynamicOptions: React.FC<DynamicOptionsProps> = ({
   options,
   onOptionChange,
+  className,
 }) => {
   const [selectedOption, setSelectedOption] = useState<string>(
     options[0]?.value || ""
@@ -40,7 +42,11 @@ const DynamicOptions: React.FC<DynamicOptionsProps> = ({
       className="grid gap-3 no-outline"
     >
       {options.map((option: Option) => (
-        <div key={option.value} className="flex items-center space-x-2">
+        <label
+          key={option.value}
+          className="flex items-center space-x-2"
+          onClick={() => handleClick(option.value)}
+        >
           <button
             type="button"
             role="radio"
@@ -48,7 +54,6 @@ const DynamicOptions: React.FC<DynamicOptionsProps> = ({
             className={`options ${
               selectedOption === option.value ? "checked" : ""
             }`}
-            onClick={() => handleClick(option.value)}
           >
             <span className="flex items-center justify-center">
               {selectedOption === option.value ? (
@@ -61,8 +66,8 @@ const DynamicOptions: React.FC<DynamicOptionsProps> = ({
               )}
             </span>
           </button>
-          <label className="option-text">{option.label}</label>
-        </div>
+          <span className="option-text">{option.label}</span>
+        </label>
       ))}
     </div>
   );
@@ -111,6 +116,7 @@ const ContactForm: React.FC = () => {
             <DynamicOptions
               options={budgetOptions}
               onOptionChange={handleOptionChange}
+              className="option-text"
             />
           </div>
           <div className="inputFields">
