@@ -1,0 +1,34 @@
+.projectContainer {
+  @apply lg:flex lg:flex-row lg:pt-10 sm:justify-center sm:text-sm pl-6;
+}
+.mainPage {
+  @apply relative flex  bg-[url('/assets/backgroundGrid.svg')];
+}
+
+.projectTextContainer {
+  @apply relative py-32 pt-5 flex flex-col border-t-0 border-b-0 justify-start bg-transparent;
+}
+
+.mainHeading {
+  @apply flex justify-center
+}
+
+.text {
+  @apply text-4xl font-medium leading-[1.3] sm:text-5xl md:text-5xl md:leading-[1.3];
+}
+.designedText {
+  @apply relative overflow-hidden bg-white px-3 shadow sm:items-center sm:justify-center;
+}
+.plusTopLeft {
+  @apply absolute -left-[0.9rem] -top-[0.52rem] z-10 flex h-4 w-7 select-none items-center justify-center text-xl text-gray-400;
+}
+.plusTopRight {
+  @apply absolute -right-[0.9rem] -top-[0.52rem] z-10 flex h-4 w-7 select-none items-center justify-center text-xl text-gray-400;
+}
+.plusBottomRight {
+  @apply absolute -bottom-[0.52rem] -right-[0.9rem] z-10 flex h-4 w-7 select-none items-center justify-center text-xl text-gray-400;
+}
+.plusBottomLeft {
+  @apply absolute -bottom-[0.52rem] -left-[0.9rem] z-10 flex h-4 w-7 select-none items-center justify-center text-xl text-gray-400 visible;
+}
+

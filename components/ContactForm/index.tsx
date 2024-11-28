@@ -40,31 +40,29 @@ const DynamicOptions: React.FC<DynamicOptionsProps> = ({
       className="grid gap-3 no-outline"
     >
       {options.map((option: Option) => (
-        <>
-          <div key={option.value} className="flex items-center space-x-2">
-            <button
-              type="button"
-              role="radio"
-              aria-checked={selectedOption === option.value}
-              className={`options ${
-                selectedOption === option.value ? "checked" : ""
-              }`}
-              onClick={() => handleClick(option.value)}
-            >
-              <span className="flex items-center justify-center">
-                {selectedOption === option.value ? (
-                  <InputOptionIcon
-                    viewBox="0 0 24 24"
-                    className="lucide lucide-circle h-2.5 w-2.5 fill-current text-current"
-                  />
-                ) : (
-                  <span className="circle-placeholder"></span>
-                )}
-              </span>
-            </button>
-            <label className="option-text">{option.label}</label>
-          </div>
-        </>
+        <div key={option.value} className="flex items-center space-x-2">
+          <button
+            type="button"
+            role="radio"
+            aria-checked={selectedOption === option.value}
+            className={`options ${
+              selectedOption === option.value ? "checked" : ""
+            }`}
+            onClick={() => handleClick(option.value)}
+          >
+            <span className="flex items-center justify-center">
+              {selectedOption === option.value ? (
+                <InputOptionIcon
+                  viewBox="0 0 24 24"
+                  className="lucide lucide-circle h-2.5 w-2.5 fill-current text-current"
+                />
+              ) : (
+                <span className="circle-placeholder"></span>
+              )}
+            </span>
+          </button>
+          <label className="option-text">{option.label}</label>
+        </div>
       ))}
     </div>
   );

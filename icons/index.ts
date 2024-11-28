@@ -18,6 +18,17 @@ import PackagesIcon from "@assets/packagesIcon.svg";
 import SoftwareDevIcon from "@assets/softwareDevIcon.svg";
 import ConsultingIcon from "@assets/consultingIcon.svg";
 import InputOptionIcon from "@assets/inputOption1.svg";
+import AMF from "@assets/AMF/AMF.png";
+import Apollo247 from "@assets/Apollo247/Apollo247.png";
+import Audvice from "@assets/Audvice/Audvice.png";
+import Beehive from "@assets/Beehive/Beehive.png";
+import CityMall from "@assets/CityMall/CitymallPartner.png";
+import CityMallOnline from "@assets/CitymallOnline/Citymall.png";
+import FintechClone from "@assets/Fintechclone.gif";
+import GutesLeben from "@assets/GutesLeben/GutesLeben.png";
+import Loonoy from "@assets/Loonoy/Loonoy.png";
+import RNFashionApp from "@assets/RNFashion/RNFashion.png";
+import VestedFinance from "@assets/VestedFinance/VestedFinance.png";
 
 export {
   DottedLine,
@@ -40,4 +51,15 @@ export {
   SoftwareDevIcon,
   ConsultingIcon,
   InputOptionIcon,
+  AMF,
+  Apollo247,
+  Audvice,
+  Beehive,
+  CityMall,
+  CityMallOnline,
+  FintechClone,
+  GutesLeben,
+  Loonoy,
+  RNFashionApp,
+  VestedFinance,
 };

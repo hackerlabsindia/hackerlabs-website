@@ -42,7 +42,7 @@ const cardProperties = [
 const ServiceDetails = () => {
   return (
     <div>
-      <div className="subContainer  font-family">
+      <div className="subContainer  font-family marquee-container">
         <div className="animation">
           <div className="uppercase elative-inline">
             • {content.animatedText.text1}

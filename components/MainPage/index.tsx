@@ -16,16 +16,16 @@ const MainPage = () => {
             <span className="plusTopLeft visible-no-transform">
               {content.mainPage.plus}
             </span>
-            <span className="plusTopRight visible-no-transform">
+            <span className="plusTopRight visible no-transform">
               {content.mainPage.plus}
             </span>
-            <span className="plusBottomRight visible-no-transform">
+            <span className="plusBottomRight visible no-transform">
               {content.mainPage.plus}
             </span>
-            <span className="plusBottomLeft visible-no-transform">
+            <span className="plusBottomLeft visible no-transform">
               {content.mainPage.plus}
             </span>
-            <span className="gradient-text visible-no-transform">
+            <span className="gradient-text visible no-transform">
               {content.mainPage.titleText}
             </span>
           </span>

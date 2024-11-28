@@ -19,7 +19,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "file.notion.so",
+        hostname: "www.google.com",
       },
     ],
   },

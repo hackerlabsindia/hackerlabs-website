@@ -3,7 +3,7 @@
 }
 
 .textContainer {
-  @apply relative py-32 flex flex-col border-t-0 border-b-0 justify-center bg-transparent;
+  @apply relative py-32 flex flex-col border-t-0 border-b-0 justify-start bg-transparent;
 }
 .mainText {
   @apply font-inter max-w-[50rem] text-center text-4xl font-medium leading-[1.3] sm:text-5xl md:text-6xl md:leading-[1.3];
@@ -21,7 +21,7 @@
   @apply absolute -bottom-[0.52rem] -right-[0.9rem] z-10 flex h-4 w-7 select-none items-center justify-center text-xl text-gray-400;
 }
 .plusBottomLeft {
-  @apply absolute -bottom-[0.52rem] -left-[0.9rem] z-10 flex h-4 w-7 select-none items-center justify-center text-xl text-gray-400 visible-no-transform;
+  @apply absolute -bottom-[0.52rem] -left-[0.9rem] z-10 flex h-4 w-7 select-none items-center justify-center text-xl text-gray-400 visible ;
 }
 .button1 {
   @apply cursor-pointer select-none rounded-2xl px-6 py-3 flex items-center gap-3 font-inter bg-gray-900 text-white hover:bg-gray-800;
