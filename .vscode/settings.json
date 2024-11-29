@@ -1,10 +1,17 @@
 {
     "cSpell.words": [
+        "Audvice",
+        "Citymall",
         "craux",
+        "Fintech",
+        "Fintechclone",
         "hackerlabs",
         "Intellisay",
+        "Loonoy",
         "lucide",
         "sepecialise",
         "specialise"
-    ]
+    ],
+    "editor.formatOnSaveMode": "modifications",
+    "editor.formatOnSave": true
 }

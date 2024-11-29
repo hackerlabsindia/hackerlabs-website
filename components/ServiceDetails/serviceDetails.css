@@ -1,5 +1,5 @@
 .subContainer {
-  @apply font-bold uppercase sm:text-6xl marquee-container;
+  @apply font-bold uppercase sm:text-6xl ;
 }
 .animation {
   @apply animate-fade-up animate-once animate-ease-in-out animate-normal text-balance

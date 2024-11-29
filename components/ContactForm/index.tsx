@@ -1,7 +1,90 @@
-import React from "react";
+"use client";
+import React, { useCallback, useState } from "react";
 import content from "@hackerlabs/content/content.json";
+import Button from "../Button";
+import Icon from "../Icon";
+import { InputOptionIcon, Submit } from "@hackerlabs/icons";
+import Input from "../InputFields";
 
-const ContactForm = () => {
+interface Option {
+  label: string;
+  value: string;
+}
+
+interface DynamicOptionsProps {
+  options: Option[];
+  onOptionChange: (selectedValue: string) => void;
+  className?: string;
+}
+
+const DynamicOptions: React.FC<DynamicOptionsProps> = ({
+  options,
+  onOptionChange,
+  className,
+}) => {
+  const [selectedOption, setSelectedOption] = useState<string>(
+    options[0]?.value || ""
+  );
+
+  const handleClick = useCallback(
+    (value: string) => {
+      setSelectedOption(value);
+      onOptionChange(value);
+    },
+    [onOptionChange]
+  );
+
+  return (
+    <div
+      role="radiogroup"
+      aria-required="false"
+      dir="ltr"
+      className="grid gap-3 no-outline"
+    >
+      {options.map((option: Option) => (
+        <label
+          key={option.value}
+          className="flex items-center space-x-2"
+          onClick={() => handleClick(option.value)}
+        >
+          <button
+            type="button"
+            role="radio"
+            aria-checked={selectedOption === option.value}
+            className={`options ${
+              selectedOption === option.value ? "checked" : ""
+            }`}
+          >
+            <span className="flex items-center justify-center">
+              {selectedOption === option.value ? (
+                <InputOptionIcon
+                  viewBox="0 0 24 24"
+                  className="lucide lucide-circle h-2.5 w-2.5 fill-current text-current"
+                />
+              ) : (
+                <span className="circle-placeholder"></span>
+              )}
+            </span>
+          </button>
+          <span className="option-text">{option.label}</span>
+        </label>
+      ))}
+    </div>
+  );
+};
+
+const ContactForm: React.FC = () => {
+  const budgetOptions: Option[] = [
+    { label: content.ContactForm.option1, value: "not-sure" },
+    { label: content.ContactForm.option2, value: "1000-5000" },
+    { label: content.ContactForm.option3, value: "5000-10000" },
+    { label: content.ContactForm.option4, value: "more-than-10000" },
+  ];
+
+  const handleOptionChange = (selectedValue: string) => {
+    console.log("Selected option:", selectedValue);
+  };
+
   return (
     <div className="contactContainer" id="contact-form">
       <div className="left-1/4 lines"></div>
@@ -11,148 +94,46 @@ const ContactForm = () => {
         <h2 className="formHeading">{content.ContactForm.heading}</h2>
         <div className="grid gap-3">
           <div className="inputFields">
-            <label className="name">{content.ContactForm.name}</label>
-            <input
+            <label className="name">Name</label>
+            <Input
               type="name"
-              className="nameInputField"
+              inputClass="nameInputField"
               id="name"
-              placeholder="Your Name"
+              placeHolder="Your Name"
             />
           </div>
           <div className="inputFields">
-            <label className="email">{content.ContactForm.email}</label>
-            <input
+            <label className="email">Email</label>
+            <Input
               type="email"
-              className="emailInputField"
+              inputClass="emailInputField"
               id="email"
-              placeholder="Email"
+              placeHolder="Email"
             />
           </div>
           <div className="inputFields">
-            <div
-              role="radiogroup"
-              aria-required="false"
-              dir="ltr"
-              className="grid gap-3 no-outline"
-              tabIndex={0}
-            >
-              <label className="questions">
-                {content.ContactForm.question}
-              </label>
-              <div className="flex items-center space-x-2">
-                <button
-                  type="button"
-                  role="radio"
-                  aria-checked="true"
-                  data-state="checked"
-                  value="not-sure"
-                  className="options"
-                  id="not-sure"
-                  tabIndex={-1}
-                  data-radix-collection-item
-                >
-                  <span
-                    className="flex items-center justify-center"
-                    data-state="checked"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="lucide lucide-circle h-2.5 w-2.5 fill-current text-current"
-                    >
-                      <circle cx="12" cy="12" r="10"></circle>
-                    </svg>
-                  </span>
-                </button>
-                <label className="option-text">
-                  {content.ContactForm.option1}
-                </label>
-              </div>
-
-              <div className="flex items-center space-x-2">
-                <button
-                  type="button"
-                  role="radio"
-                  aria-checked="false"
-                  data-state="unchecked"
-                  value="1000-5000"
-                  className="options"
-                  id="1000-5000"
-                  tabIndex={-1}
-                  data-radix-collection-item
-                ></button>
-                <label className="option-text">
-                  {content.ContactForm.option2}
-                </label>
-              </div>
-
-              <div className="flex items-center space-x-2">
-                <button
-                  type="button"
-                  role="radio"
-                  aria-checked="false"
-                  data-state="unchecked"
-                  value="5000-10000"
-                  className="options"
-                  id="5000-10000"
-                  tabIndex={-1}
-                  data-radix-collection-item
-                ></button>
-                <label className="option-text">
-                  {content.ContactForm.option3}
-                </label>
-              </div>
-
-              <div className="flex items-center space-x-2">
-                <button
-                  type="button"
-                  role="radio"
-                  aria-checked="false"
-                  data-state="unchecked"
-                  value="more-than-10000"
-                  className="options"
-                  id="more-than-10000"
-                  tabIndex={-1}
-                  data-radix-collection-item
-                ></button>
-                <label className="option-text">
-                  {content.ContactForm.option4}
-                </label>
-              </div>
-            </div>
+            <label className="questions">{content.ContactForm.question}</label>
+            <DynamicOptions
+              options={budgetOptions}
+              onOptionChange={handleOptionChange}
+              className="option-text"
+            />
           </div>
           <div className="inputFields">
             <label className="questions">{content.ContactForm.helpTab}</label>
-            <textarea
-              className="textArea"
-              placeholder="Type your message here."
+            <Input
+              inputClass="textArea"
+              placeHolder="Type your message here."
               id="message"
-            ></textarea>
+            />
           </div>
         </div>
         <div className="min-h-10 pt-3"></div>
-        <div className=""></div>
         <div className="mt-12 flex justify-center">
-          <button className="submitButton" tabIndex={0}>
-            {content.ContactForm.button}
-
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#e8eaed"
-            >
-              <path d="M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z"></path>
-            </svg>
-          </button>
+          <Button containerClass={"submitButton"} tabIndex={0}>
+            {"Submit"}
+            <Icon Icon={Submit} width={20} height={20} />
+          </Button>
         </div>
       </div>
     </div>
@@ -160,3 +141,6 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+
+
+

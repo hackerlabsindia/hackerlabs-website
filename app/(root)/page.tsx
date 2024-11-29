@@ -1,5 +1,6 @@
 import ContactForm from "@hackerlabs/components/ContactForm";
 import DecisionHelper from "@hackerlabs/components/DecisionHelper";
+import { FaqProvider } from "@hackerlabs/components/DecisionHelper/FaqContext";
 import Footer from "@hackerlabs/components/Footer";
 import Header from "@hackerlabs/components/Header";
 import LaunchYourIdea from "@hackerlabs/components/LaunchYourIdea";
@@ -21,7 +22,10 @@ export default function Home() {
         <ServiceDetails />
         <ProcessFlow />
         <PricingAndServicing />
-        <DecisionHelper />
+        <FaqProvider>
+          <DecisionHelper />
+        </FaqProvider>
+
         <ContactForm />
         <LaunchYourIdea />
       </div>

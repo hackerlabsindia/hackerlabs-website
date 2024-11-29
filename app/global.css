@@ -71,6 +71,7 @@
     opacity: 1;
     transform: none;
   }
+
   .flex-space-between {
     display: flex;
     justify-content: space-between;
@@ -2088,3 +2089,4 @@ video {
 @import url("../components/Footer/footer.css");
 @import url("../components/LaunchYourIdea/launchYourIdea.css");
 @import url("../components/PricingAndServicing/pricingAndServicing.css");
+@import url("../Container/Portfolio/MainPage/index.css");

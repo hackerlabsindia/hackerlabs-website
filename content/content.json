@@ -1,134 +1,324 @@
 {
-    "header" : {
-        "appTitle" : "HackerLabs",
-        "fontHeader" : "Available oct. 2024"
-        
+  "header": {
+    "appTitle": "HackerLabs",
+    "fontHeader": "Available oct. 2024"
+  },
+  "buttons": {
+    "button1": "Start a Project",
+    "button2": "See Packages"
+  },
+  "mainPage": {
+    "topTitle": "We're a seriously good",
+    "plus": "+",
+    "titleText": "Hybrid Web Development",
+    "lastWord": "   agency."
+  },
+  "secondaryText": {
+    "line1": "Great websites need great code.",
+    "line2": "We never use no-code tools or templates.",
+    "line3": "So you get a website that's truly yours ❤️"
+  },
+  "animatedText": {
+    "text1": "Web Development",
+    "text2": "UI/UX Design ",
+    "text3": "Landing Pages",
+    "text4": "SaaS",
+    "text5": "Software Development",
+    "text6": "Consulting"
+  },
+  "tableHeading": {
+    "text1": "We",
+    "text2": "specialise",
+    "emoji": "✨",
+    "text3": "in"
+  },
+  "Cards": [
+    {
+      "title": "Packages",
+      "description": "Easy, set prices for a simple SaaS, landing page or website."
     },
-     "buttons"  : { 
-        "button1" : "Start a Project",
-        "button2" : "See Packages"
-
+    {
+      "title": "Software Development",
+      "description": "Custom software solution. We call to talk through your ideas to find a suitable scope."
     },
-    "mainPage" : {
-        "topTitle" : "We're a seriously good",
-        "plus" : "+",
-        "titleText" : "Hybrid Web Development",
-        "lastWord" : "   agency."
-    },
-    "secondaryText": {
-        "line1" : "Great websites need great code.",
-        "line2" : "We never use no-code tools or templates.",
-        "line3" : "So you get a website that's truly yours ❤️"
-    },
-    "animatedText" : {
-        "text1" : "Web Development",
-        "text2" : "UI/UX Design ",
-        "text3" : "Landing Pages",
-        "text4" : "SaaS",
-        "text5" : "Software Development",
-        "text6" : "Consulting"
-    },
-    "tableHeading" : {
-        "text1" : "We",
-        "text2" : "specialise",
-        "emoji" : "✨",
-        "text3" : "in"
-    },
-    "Packages" : {
-        "heading" : "Packages",
-        "description" : "Easy, set prices for a simple SaaS, landing page or website."
-    },
-    "SoftwareDevelopment" : {
-        "heading" : "Software Development",
-        "description" : "Custom software solution. We call to talk through your ideas to find a suitable scope."
-    },
-     "Consulting" : {
-        "heading" : "Consulting",
-        "description" : "Help you with your project or advice to get you started."
-        
-    },
-    "ProcessOfWorking" : {
-        "text1" : "The Process",
-        "text2" : "How we working"
-    },
-    "IntroductoryCall" : {
-        "heading" : "Introductory Call",
-        "description" : "In a 30 min call, we will discuss how can we provide value to you and your business.",
-        "button" : "Start a Project"
-    },
-    "Requirement" : {
-        "heading" : "Requirement & Scope",
-        "description" : "Our team will gather all the information needed to start the project and provide you with a proposal Once you accept the proposal, we will start working on the project."
-          },
-    "Development" :{
-            "heading": "Development",
-            "description": "The team work in iterations with frequent communication with you in order to deliver the best possible result."
-          },
-    "Support" :{
-            "heading" : "Handover & Support",
-            "description" : "After you get the result, you have the option of ongoing maintenance and development of new features."
-          },
-     "OurServices" : {
-            "text1" : "Let's Work together",
-            "text2" : "Our services:"
-          },
-    "LandingPage" : {
-            "fixedPrice": "Fixed Price",
-            "heading" : "Landing Page",
-            "description" : "We create a fully fledged landing page that converts visitors into customers. Custom design, copywriting, and development - we don't use templates here.",
-            "button" : "Get Started",
-            "from" : "from",
-            "price" : "$2000"
-          },
-    "softwareDevelop" : {
-            "custom" : "Custom",
-            "heading" : "Software Development",
-            "description" : "We will work closely to understand your goals and create an MVP for your next big SaaS.You also have the option for ongoing support & development to scale even further!",
-            "button" : "Let's talk",
-            "from" :"from",
-            "price" : "$2500"
-          },
-    "BookCall" : {
-            "perHour" : "Per hour",
-            "heading" : "Consulting / Mentoring",
-            "description" : "Need help with your career path or startup? Let's talk about your goals and how we can help you achieve them.",
-            "button" : "Book a call",
-            "from" :"from",
-            "price" : "$50"
- },
-    "Question" : {
-             "heading" : "Still wondering if we're right for you?"
- },
-    "subQuestions" : {
-            "question1" : "What is the typical process like?",
-            "question2" : "How much will my website cost?",
-            "question3" : "How long does a website take to build?",
-            "question4" : " I already have the designs, can you develop them?"
-          },
-    "ContactForm" : {
-        "heading" : "Ready to get started?",
-        "name" : "Name",
-        "email" : "Email",
-        "question" : "What's your budget? (optional)",
-        "option1" : " I'm not sure",
-        "option2" : "$1,000 - $5,000",
-        "option3" : "$5,000 - $10,000",
-        "option4" : "More than $10,000",
-        "helpTab" : "How can I help you?",
-        "button" : "Submit"
-    },
-    "StartProject" : {
-        "text1" : "Kickstart your dream project today.",
-        "text2" :  "You're in good hands.",
-        "button" : "Start a Project"
-    },
-    "Footer" : {
-        "title" : "HackerLabs",
-        "link1" : "https://www.youtube.com/?app=desktop",
-        "linkName1" : "Youtube",
-        "link2" : "/",
-        "linkName2" : "Intellisay"
+    {
+      "title": "Consulting",
+      "description": "Help you with your project or advice to get you started."
     }
+  ],
 
+  "ProcessOfWorking": {
+    "text1": "The Process",
+    "text2": "How we working"
+  },
 
+  "ProcessFlowCards": [
+    {
+      "text": "01",
+      "title": "Introductory Call",
+      "description": "In a 30 min call, we will discuss how can we provide value to you and your business."
+    },
+    {
+      "text": "02",
+      "title": "Requirement & Scope",
+      "description": "Our team will gather all the information needed to start the project and provide you with a proposal Once you accept the proposal, we will start working on the project."
+    },
+    {
+      "text": "03",
+      "title": "Development",
+      "description": "The team work in iterations with frequent communication with you in order to deliver the best possible result."
+    },
+    {
+      "text": "04",
+      "title": "Handover & Support",
+      "description": "After you get the result, you have the option of ongoing maintenance and development of new features."
+    }
+  ],
+  "OurServices": {
+    "text1": "Let's Work together",
+    "text2": "Our services:"
+  },
+  "ServiceCard": [
+    {
+      "tag": "Fixed Price",
+      "title": "Landing Page",
+      "description": "We create a fully fledged landing page that converts visitors into customers. Custom design, copywriting, and development - we don't use templates here.",
+      "button": "Get Started",
+      "text": "from",
+      "price": "$2000"
+    },
+    {
+      "tag": "Custom",
+      "title": "Software Development",
+      "description": "We will work closely to understand your goals and create an MVP for your next big SaaS.You also have the option for ongoing support & development to scale even further!",
+      "button": "Let's talk",
+      "text": "from",
+      "price": "$2500"
+    },
+    {
+      "tag": "Per hour",
+      "title": "Consulting / Mentoring",
+      "description": "Need help with your career path or startup? Let's talk about your goals and how we can help you achieve them.",
+      "button": "Book a call",
+      "text": "from",
+      "price": "$50"
+    }
+  ],
+  "Question": {
+    "heading": "Still wondering if we're right for you?"
+  },
+
+  "faqs": [
+    {
+      "question": "What is the typical process like?",
+      "answer": "Our process involves understanding your requirements, designing, developing, testing, and deploying your website."
+    },
+    {
+      "question": "How much will my website cost?",
+      "answer": "The cost of a website depends on its complexity, features, and design requirements. Contact us for a personalized quote."
+    },
+    {
+      "question": "How long does a website take to build?",
+      "answer": "The duration depends on the scope and complexity of the project. On average, it takes 4-6 weeks."
+    },
+    {
+      "question": "I already have the designs, can you develop them?",
+      "answer": "Yes, we can work with your designs and develop a fully functional website based on them."
+    }
+  ],
+
+  "ContactForm": {
+    "heading": "Ready to get started?",
+
+    "question": "What's your budget? (optional)",
+    "option1": " I'm not sure",
+    "option2": "$1,000 - $5,000",
+    "option3": "$5,000 - $10,000",
+    "option4": "More than $10,000",
+    "helpTab": "How can I help you?"
+  },
+  "StartProject": {
+    "text1": "Kickstart your dream project today.",
+    "text2": "You're in good hands.",
+    "button": "Start a Project"
+  },
+  "Footer": {
+    "title": "HackerLabs",
+    "link1": "https://www.youtube.com/?app=desktop",
+    "linkName1": "Youtube",
+    "link2": "/",
+    "linkName2": "Intellisay"
+  },
+  "Projects": [
+    {
+      "key": "apollo",
+      "title": "Apollo 24|7",
+      "description": "Apollo 24|7 is India's leading medical app with over 10 million downloads and a 4.5-star rating. It offers medicine delivery, home lab tests with prompt reports, and doctor consultations across 55+ specialties. Additional features include an AI symptom checker and health blogs.",
+      "bulletPoints": [
+        "🚀 Optimized app performance using profiling tools to boost speed and responsiveness.",
+        "🎯 Enhanced user journey by integrating AppsFlyer and CleverTap for better retention.",
+        "🎨 Developed a design scaling solution for consistent UI across devices"
+      ],
+      "androidLink": "https://play.google.com/store/apps/details?id=com.apollo.patientapp&hl=en_IN",
+      "androidLinkName": "android link 🔗 ",
+      "iosLink": "https://apps.apple.com/in/app/apollo-247-health-medicine/id1496740273",
+      "iosLinkName": "ios link 🔗"
+    },
+    {
+      "key": "cityMallOnline",
+      "title": "Citymall Online",
+      "description": " CityMall Online is a leading Indian e-commerce app (10M+ downloads, 4.5+ rating) offering a wide product range at competitive prices with user-friendly navigation, secure checkout, free delivery, and excellent support.",
+      "bulletPoints": [
+        "🛠️ Led full-stack development from scratch.",
+        " 🔔 Integrated OneSignal notifications.",
+        "🚚 Developed delivery module for real-time tracking.",
+        "🔗 Integrated third-party APIs.📦 Designed order flow for seamless processing."
+      ],
+      "androidLink": "https://play.google.com/store/apps/details?id=live.citymall.customer.prod&hl=en_IN",
+      "androidLinkName": "android link 🔗",
+      "iosLink": "",
+      "iosLinkName": "ios link 🔗"
+    },
+    {
+      "key": "vestedFinance",
+      "title": "Vested Finance",
+      "description": " Vested Finance is an investment platform for Indian users to access U.S. stocks, ETFs, P2P lending, INR bonds, and solar projects. With 500K+ downloads and a 4.5-star rating, it offers real-time market data and a user-friendly interface for global portfolio diversification.",
+      "bulletPoints": [
+        "🗄️ Developed Redis caching to boost performance.",
+        "📊 Built real-time data integration with Redux and Socket.io.",
+        "📈 Designed Instrument Page for info and comparison.",
+        "🎨 Led UI development and API integration.🔐 Implemented two-factor authentication."
+      ],
+      "androidLink": "https://play.google.com/store/apps/details?id=com.vested.investing.android&hl=en_IN",
+      "androidLinkName": "android link 🔗",
+      "iosLink": "https://apps.apple.com/in/app/vested-us-stocks-investing/id1478145933",
+      "iosLinkName": "ios link 🔗"
+    },
+    {
+      "key": "beehive",
+      "title": "Beehive",
+      "description": " Beehive is a secure app that helps busy parents manage households efficiently by centralizing tasks, schedules, and providing personalized content with data-driven insights—all accessible anywhere.",
+      "bulletPoints": [
+        "🚀 Optimized app performance using profilers; implemented caching to reduce API calls.",
+        "🎨 Developed intuitive UI, integrated APIs, and in-app purchases with React Native Purchase and RevenueCat.",
+        "🔔 Integrated push notifications and deep linking with AppsFlyer and Appcues.",
+        "🇺🇸 Ensured HIPAA compliance for an American client."
+      ],
+      "androidLink": "https://play.google.com/store/apps/details?id=com.beehive.production",
+      "androidLinkName": "android link 🔗",
+      "iosLink": "https://apps.apple.com/us/app/beehive-parenting-simplified/id6446121415",
+      "iosLinkName": "ios link 🔗"
+    },
+    {
+      "key": "audvice",
+      "title": "Audvice",
+      "description": " Audvice is a GDPR-compliant voice messaging platform developed for an Austrian client to enhance corporate communication. It allows users to record, edit, and share information via playlists, streamlining processes like onboarding and project management.",
+      "bulletPoints": [
+        "🚀 Developed the app from scratch with seamless UI and API integration.",
+        "🎤 Built native audio recorder using JSI for iOS and Android.",
+        "🔔 Implemented push notifications via AWS SNS.",
+        "🔗 Integrated deep linking with AppsFlyer.☁️ Created AWS Lambda functions for audio transcription.",
+        "🛡️ Ensured GDPR compliance throughout."
+      ],
+      "androidLink": "https://play.google.com/store/apps/details?id=com.audvice.audvice&hl=en_IN",
+      "androidLinkName": "android link 🔗",
+      "iosLink": "https://apps.apple.com/in/app/audvice/id1440810304",
+      "iosLinkName": "ios link 🔗"
+    },
+    {
+      "key": "amf",
+      "title": "Malý fotbal",
+      "description": " Malý fotbal is a mobile app delivering the latest small-scale football news directly to fans. Users stay updated on competitions, never missing a goal or headline. By adding favorite clubs or leagues, they receive real-time updates and never miss any action.",
+      "bulletPoints": [
+        " 🚀 Developed the app from scratch using Expo and React Native for cross-platform use.",
+        " 🎨 Designed intuitive UI to enhance user interaction.",
+        "⚽ Integrated APIs for live scores, match schedules, and standings.",
+        " 💾 Implemented Redis caching to optimize performance after matches."
+      ],
+      "androidLink": "https://play.google.com/store/apps/details?id=com.amf&hl=en_AU",
+      "androidLinkName": "android link 🔗",
+      "iosLink": "https://apps.apple.com/us/app/mal%C3%BD-fotbal/id1665660869",
+      "iosLinkName": "ios link 🔗"
+    },
+    {
+      "key": "loonoy",
+      "title": "Loonoy",
+      "description": "Loonoy is the first smart baby cradle with automatic rocking and video monitoring, controllable via a mobile app for real-time cradle control—ensuring baby's comfort and safety.",
+      "bulletPoints": [
+        "🚀 Developed the mobile app from scratch, creating an intuitive user experience.",
+        "📲 Implemented real-time IoT communication via Bluetooth for instant cradle monitoring.",
+        "🖥️ Built features to display cradle data, allowing users to adjust settings and view live video.",
+        "🇨🇿 Developed for a Czech Republic client, customizing features to meet market needs and compliance standards."
+      ],
+      "androidLink": "https://play.google.com/store/apps/details?id=com.loonoy_mobile",
+      "androidLinkName": "android link 🔗",
+      "iosLink": "https://apps.apple.com/cz/app/loonoy/id1596907346",
+      "iosLinkName": "ios link 🔗"
+    },
+    {
+      "key": "cityMall",
+      "title": "Citymall Partner",
+      "description": "CityMall Partner App expands CityMall's ecosystem by empowering affiliates to place orders on behalf of their customers, enhancing reach and user engagement through seamless partner-platform interactions.",
+      "bulletPoints": [
+        "🚀 Led development from scratch, creating a robust and user-friendly app.",
+        "🔗 Implemented deep linking between CityMall Online and Partner apps using RabbitMQ and Branch.io for seamless navigation.",
+        "📩 Developed a Node.js microservice for notifications via OneSignal.",
+        "⚙️ Integrated APIs and set up CI/CD pipeline with AppCenter."
+      ],
+      "androidLink": "https://play.google.com/store/apps/details?id=com.citymall.app&hl=en_IN",
+      "androidLinkName": "android link 🔗",
+      "iosLink": "",
+      "iosLinkName": "ios link 🔗"
+    },
+    {
+      "key": "gutesleben",
+      "title": "Gutes Leben",
+      "description": "Gutesleben is an app for the NGO Katholischer Familienverband Tirol, providing resources and information to improve lives, promote well-being, and support the community.",
+      "bulletPoints": [
+        "🚀 Full-Stack Development: Led development of mobile app, CMS, and server.",
+        "📱 Cross-Platform App: Built from scratch using React Native and Expo.",
+        "🔔 Push Notifications: Implemented to engage users.",
+        "🖥️ Custom CMS: Developed for NGO staff to easily manage content.",
+        "💾 Backend Server: Created with Express, TypeScript, and MongoDB for robust APIs."
+      ],
+      "androidLink": "https://apps.apple.com/us/app/gutes-leben/id1541165124",
+      "androidLinkName": "android link 🔗",
+      "iosLink": "https://apps.apple.com/us/app/gutes-leben/id1541165124",
+      "iosLinkName": "ios link 🔗"
+    },
+    {
+      "key": "fintechClone",
+      "title": "Fintech Clone",
+      "description": " Revolut Fintech Clone is a personal project demonstrating my React Native skills. Inspired by Revolut, it replicates modern fintech app features using advanced technologies.",
+      "bulletPoints": [
+        "🚀 Built from scratch using Expo and Expo Router.",
+        "🔒 Implemented SMS OTP authentication with Clerk.",
+        "🎨 Used Reanimated 3 and Gesture Handler for animations and gestures.⚙️ Managed state with Zustand and MMKV.",
+        "📊 Added charts with Victory Native XL.",
+        "📱 Created native menus using Zeego.",
+        "🌐 Integrated CoinMarketCap API for real-time crypto prices."
+      ],
+      "androidLink": "https://github.com/praveen-me/fintech-clone",
+      "androidLinkName": "Github link 🔗",
+      "iosLink": "",
+      "iosLinkName": "ios link 🔗"
+    },
+    {
+      "key": "rnFashionApp",
+      "title": "RN Fashion App",
+      "description": "RN Fashion App is a personal project showcasing my React Native expertise. It's a fashion app clone featuring beautiful animations and gestures, demonstrating advanced mobile development techniques and a keen eye for UI/UX design.",
+      "bulletPoints": [
+        "🚀 Built the app from scratch using Expo and React Native, establishing the entire structure and workflow.",
+        "🎨 Implemented intricate animations with React Native Reanimated for a smooth, engaging user experience.",
+        "🔐 Utilized Firebase for user authentication and data storage, ensuring a secure and efficient backend."
+      ],
+      "androidLink": "https://play.google.com/store/apps/details?id=com.rn_fashion_app&hl=en_IN",
+      "androidLinkName": "android link 🔗",
+      "iosLink": "",
+      "iosLinkName": "ios link 🔗"
+    }
+  ]
 }
+
+
+

@@ -1,26 +1,33 @@
 import React from "react";
-import Image from "next/image";
 import content from "@hackerlabs/content/content.json";
 import "./header.css";
+import Button, { IconPosition } from "../Button";
+import Icon from "../Icon";
+import Link from "next/link";
+import { DottedLine } from "@hackerlabs/icons";
+import Logo from "../Logo";
 
 const Header = () => {
   return (
-    <div className="headerContainer1">
+    <div className="headerContainer1 border-color">
       <div className="headerContainer2">
-        <nav className="navLinks">
-          <a className="logoTitle  font-sans " href="<">
-            <div className="logo">
-              <Image
-                src="/assets/hackerlabs.logo.png"
-                alt="logo"
-                width={30}
-                height={30}
-                className="pt-0.5 text-transparent"
-              />
-              {content.header.appTitle}
-            </div>
-          </a>
+        <nav className="navLinks max-w-clamp-custom">
+          <Button
+            text={content.header.appTitle}
+            containerClass={"logoTitle"}
+            iconPosition={IconPosition.START}
+            icon={
+              <Logo logoContainerClass="flex items-center justify-center " />
+            }
+          />
+
           <div className="headerText">
+            <Link
+              href="/portfolio"
+              className="border-b-2 hover:border-black font-bold  border-transparent relative transition-all duration-300"
+            >
+              Portfolio🖇️
+            </Link>
             <div className="headerSubText">
               <span className="dotContainer1">
                 <span className="dotContainer2"></span>
@@ -28,36 +35,20 @@ const Header = () => {
               </span>
               <span className="availableDate">{content.header.fontHeader}</span>
             </div>
-            <button className="button">
-              <div className="buttonLogo">
-                <Image
-                  src="/assets/hackerlabs.logo.png"
-                  alt="logo"
-                  width={30}
-                  height={30}
-                  className="text-transparent"
-                />
-              </div>
-              {content.buttons.button1}
-            </button>
+            <Button
+              text={content.buttons.button1}
+              containerClass={"button"}
+              iconPosition={IconPosition.START}
+              icon={
+                <Logo logoContainerClass="flex items-center justify-center" />
+              }
+            ></Button>
           </div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="absolute bottom-0 left-0 w-full"
+          <Icon
+            Icon={DottedLine}
             height={2}
-            fill="none"
-            viewBox="0 0 1358 1"
-          >
-            <line
-              x1="100%"
-              y1="0.5"
-              x2="-4.11709e-05"
-              y2="0.499881"
-              stroke="#eceaea"
-              strokeOpacity="1"
-              strokeDasharray="4 4"
-            ></line>
-          </svg>
+            iconClass="absolute bottom-0 left-0 w-full"
+          />
         </nav>
       </div>
     </div>

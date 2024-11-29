@@ -1,6 +1,9 @@
 import React from "react";
 import content from "@hackerlabs/content/content.json";
 import "./mainPage.css";
+import Icon from "../Icon";
+import { ArrowDown } from "@hackerlabs/icons";
+import Button from "../Button";
 
 const MainPage = () => {
   return (
@@ -13,16 +16,16 @@ const MainPage = () => {
             <span className="plusTopLeft visible-no-transform">
               {content.mainPage.plus}
             </span>
-            <span className="plusTopRight visible-no-transform">
+            <span className="plusTopRight visible no-transform">
               {content.mainPage.plus}
             </span>
-            <span className="plusBottomRight visible-no-transform">
+            <span className="plusBottomRight visible no-transform">
               {content.mainPage.plus}
             </span>
-            <span className="plusBottomLeft visible-no-transform">
+            <span className="plusBottomLeft visible no-transform">
               {content.mainPage.plus}
             </span>
-            <span className="gradient-text visible-no-transform">
+            <span className="gradient-text visible no-transform">
               {content.mainPage.titleText}
             </span>
           </span>
@@ -37,22 +40,13 @@ const MainPage = () => {
           <span>{content.secondaryText.line3}</span>
         </div>
         <div className="mt-12 flex justify-center gap-3">
-          <button className="button1" tabIndex={0}>
+          <Button containerClass={"button1"} tabIndex={0}>
             {content.buttons.button1}
-          </button>
-          <button className="button2" tabIndex={0}>
+          </Button>
+          <Button containerClass={"button2"} tabIndex={0}>
             {content.buttons.button2}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="20px"
-              viewBox="0 -960 960 960"
-              width="20px"
-              fill="#000"
-              className="text-white"
-            >
-              <path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z"></path>
-            </svg>
-          </button>
+            <Icon Icon={ArrowDown} width={20} height={20} />
+          </Button>
         </div>
       </div>
     </div>

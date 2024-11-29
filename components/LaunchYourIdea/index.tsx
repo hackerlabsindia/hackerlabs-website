@@ -1,6 +1,7 @@
 import React from "react";
 
 import content from "@hackerlabs/content/content.json";
+import Button from "../Button";
 
 const LaunchYourIdea = () => {
   return (
@@ -15,9 +16,9 @@ const LaunchYourIdea = () => {
             {content.StartProject.text1}
           </h3>
           <p className="font-inter text-lg"> {content.StartProject.text2}</p>
-          <button className="button font-inter" tabIndex={0}>
+          <Button containerClass={"button font-inter"} tabIndex={0}>
             {content.StartProject.button}
-          </button>
+          </Button>
         </div>
       </div>
     </div>
