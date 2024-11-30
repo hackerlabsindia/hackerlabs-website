@@ -1,5 +1,9 @@
 .projectContainer {
-  @apply lg:flex lg:flex-row lg:pt-10 sm:justify-center sm:text-sm pl-6;
+  @apply flex flex-col lg:flex-row lg:pt-10 sm:justify-center sm:text-sm pl-6 lg:justify-between lg:items-center;
+
+  div:first-child {
+    @apply flex-1
+  }
 }
 .mainPage {
   @apply relative flex  bg-[url('/assets/backgroundGrid.svg')];
@@ -33,5 +37,13 @@
 }
 .link{
   @apply border-b-2 hover:border-black font-bold  border-transparent relative transition-all duration-300 mr-4;
+}
+
+.imgContainer {
+  @apply lg:basis-[50%];
+
+  img {
+    @apply w-full relative justify-between md:px-12
+  }
 }
 

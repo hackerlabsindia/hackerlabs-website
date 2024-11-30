@@ -1,4 +1,5 @@
 import React from "react";
+import { boolean } from "zod";
 
 interface InputProps {
   children?: React.ReactNode;
@@ -7,7 +8,9 @@ interface InputProps {
   inputClass?: string;
   id?: string;
   placeHolder?: string;
+  value?: string;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  required?: boolean;
 }
 
 function Input({
@@ -18,6 +21,8 @@ function Input({
   id,
   placeHolder,
   onChange,
+  required,
+  value,
 }: InputProps) {
   return (
     <>
@@ -31,7 +36,9 @@ function Input({
           type={type}
           className={inputClass}
           placeholder={placeHolder}
+          value={value}
           onChange={onChange}
+          required
         />
       )}
     </>
