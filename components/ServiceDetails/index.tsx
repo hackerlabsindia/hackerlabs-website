@@ -42,18 +42,6 @@ const cardProperties = [
 const ServiceDetails = () => {
   return (
     <div>
-      <div className="subContainer  font-family marquee-container">
-        <div className="animation">
-          <div className="uppercase elative-inline">
-            • {content.animatedText.text1}
-            <br />• {content.animatedText.text2}
-            <br />• {content.animatedText.text3}
-            <br />• {content.animatedText.text4}
-            <br />• {content.animatedText.text5}
-            <br />• {content.animatedText.text6}
-          </div>
-        </div>
-      </div>
       <h2 className="headingText1 font-inter ">
         {content.tableHeading.text1}
         <span className="headingText2  border-color gradient-text">
@@ -67,7 +55,7 @@ const ServiceDetails = () => {
       </div>
       <div className="tableSubContainer">
         {content.Cards.map((card, index) => (
-          <>
+          <React.Fragment key={index}>
             <CardContainer
               key={index}
               card={{ ...card, iconComponent: cardProperties[index].icon }}
@@ -79,7 +67,7 @@ const ServiceDetails = () => {
                 <div className="h-14 w-1/2 border-r border-gray-200"></div>
               </div>
             )}
-          </>
+          </React.Fragment>
         ))}
       </div>
     </div>
