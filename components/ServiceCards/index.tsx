@@ -1,5 +1,6 @@
 import React from "react";
 import Button, { ButtonProps, IconPosition } from "../Button";
+import clsx from "clsx";
 
 export interface ServiceCardProps {
   tag: string;
@@ -32,7 +33,9 @@ const ServiceCard = ({
       <div className="boxFooter">
         <Button
           text={button}
-          containerClass={highlight ? "highlightedButton" : "startButton1"}
+          containerClass={clsx("startButton1", {
+            highlightedButton: highlight,
+          })}
           iconPosition={IconPosition.END}
           icon={iconComponent}
         />

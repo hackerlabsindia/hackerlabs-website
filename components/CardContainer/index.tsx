@@ -8,7 +8,7 @@ interface CardContainerProps {
 
 const CardContainer = ({ children, card }: CardContainerProps) => {
   return (
-    <div className="min-w-[20rem] flex-1 bg-white">
+    <div className="sm:min-w-[20rem]  flex-1 bg-white">
       {children}
 
       <div>
