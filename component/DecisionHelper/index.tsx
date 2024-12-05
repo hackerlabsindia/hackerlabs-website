@@ -1,6 +1,5 @@
 import React from "react";
 import content from "@hackerlabs/content/content.json";
-import AccordionItem from "../Accordion";
 import FaqItem from "../Accordion";
 
 const DecisionHelper = () => {

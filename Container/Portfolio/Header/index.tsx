@@ -1,10 +1,10 @@
 import React from "react";
 import content from "@hackerlabs/content/content.json";
-import "../../../components/Header/header.css";
-import Button, { IconPosition } from "../../../components/Button";
-import Icon from "../../../components/Icon";
+import "../../../component/Header/header.css";
+import Button, { IconPosition } from "../../../component/Button";
+import Icon from "../../../component/Icon";
 import { DottedLine } from "@hackerlabs/icons";
-import Logo from "../../../components/Logo";
+import Logo from "../../../component/Logo";
 import Link from "next/link";
 
 const PortfolioHeader = () => {

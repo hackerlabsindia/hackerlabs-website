@@ -3,14 +3,15 @@
 import React, { useCallback } from "react";
 import { useFaqContext } from "../DecisionHelper/FaqContext";
 
-export interface QuestionProps {
+interface FaqItemProps {
   question: string;
   answer: string;
   index: number;
 }
 
-const FaqItem = ({ question, answer, index }: QuestionProps) => {
+const FaqItem: React.FC<FaqItemProps> = ({ question, answer, index }) => {
   const { openFaqIndex, toggleFaq } = useFaqContext();
+
   const isOpen = openFaqIndex === index;
 
   const handleToggleFaq = useCallback(() => {
@@ -22,17 +23,18 @@ const FaqItem = ({ question, answer, index }: QuestionProps) => {
       onClick={handleToggleFaq}
       className="subQuestion not-transform cursor-pointer"
     >
-      <div className="select-none flex-space-between font-inter text-xl font-medium">
-        {question}
-      </div>
-
-      <section
+      <h3
         className={`overflow-hidden transition-all duration-300 ease-in-out bg-white ${
           isOpen ? "max-h-screen mt-4 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="text-gray-800">{answer}</div>
-      </section>
+        {question}
+      </h3>
+      {isOpen && (
+        <p className="mt-4 text-gray-800 transition-all duration-300">
+          {answer}
+        </p>
+      )}
     </div>
   );
 };
