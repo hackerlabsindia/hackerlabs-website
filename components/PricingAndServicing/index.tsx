@@ -12,7 +12,7 @@ const PricingAndServicing = () => {
       <div className="verticalLines left-1/4"></div>
       <div className="verticalLines left-1/2"></div>
       <div className="verticalLines left-3/4"></div>
-      <div className="headerContainer">
+      <div className="headerContainer" id="See-packages">
         <span className="heading1">{content.OurServices.text1}</span>
         <div className="relative">
           <h2 className="heading2">{content.OurServices.text2}</h2>

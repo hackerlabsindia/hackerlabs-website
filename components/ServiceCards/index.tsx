@@ -1,6 +1,7 @@
 import React from "react";
 import Button, { ButtonProps, IconPosition } from "../Button";
 import clsx from "clsx";
+import Link from "next/link";
 
 export interface ServiceCardProps {
   tag: string;
@@ -31,14 +32,16 @@ const ServiceCard = ({
         <p className="mt-3">{description}</p>
       </div>
       <div className="boxFooter">
-        <Button
-          text={button}
-          containerClass={clsx("startButton1", {
-            highlightedButton: highlight,
-          })}
-          iconPosition={IconPosition.END}
-          icon={iconComponent}
-        />
+        <Link href="#contact-form">
+          <Button
+            text={button}
+            containerClass={clsx("startButton1", {
+              highlightedButton: highlight,
+            })}
+            iconPosition={IconPosition.END}
+            icon={iconComponent}
+          />
+        </Link>
         <div className="flex gap-1.5">
           {text}
           <p className="font-semibold"> {price}</p>

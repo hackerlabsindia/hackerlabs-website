@@ -2,6 +2,7 @@ import React from "react";
 
 import content from "@hackerlabs/content/content.json";
 import Button from "../Button";
+import Link from "next/link";
 
 const LaunchYourIdea = () => {
   return (
@@ -16,9 +17,11 @@ const LaunchYourIdea = () => {
             {content.StartProject.text1}
           </h3>
           <p className="font-inter text-lg"> {content.StartProject.text2}</p>
-          <Button containerClass={"footerButton font-inter"} tabIndex={0}>
-            {content.StartProject.button}
-          </Button>
+          <Link href="#contact-form">
+            <Button containerClass={"footerButton font-inter"} tabIndex={0}>
+              {content.StartProject.button}
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
