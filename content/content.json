@@ -160,9 +160,9 @@
         "🎨 Developed a design scaling solution for consistent UI across devices"
       ],
       "androidLink": "https://play.google.com/store/apps/details?id=com.apollo.patientapp&hl=en_IN",
-      "androidLinkName": "android link 🔗 ",
+      "androidLinkName": "android🔗 ",
       "iosLink": "https://apps.apple.com/in/app/apollo-247-health-medicine/id1496740273",
-      "iosLinkName": "ios link 🔗"
+      "iosLinkName": "ios🔗"
     },
     {
       "key": "cityMallOnline",
@@ -175,9 +175,9 @@
         "🔗 Integrated third-party APIs.📦 Designed order flow for seamless processing."
       ],
       "androidLink": "https://play.google.com/store/apps/details?id=live.citymall.customer.prod&hl=en_IN",
-      "androidLinkName": "android link 🔗",
+      "androidLinkName": "android🔗",
       "iosLink": "",
-      "iosLinkName": "ios link 🔗"
+      "iosLinkName": "ios🔗"
     },
     {
       "key": "vestedFinance",
@@ -190,9 +190,9 @@
         "🎨 Led UI development and API integration.🔐 Implemented two-factor authentication."
       ],
       "androidLink": "https://play.google.com/store/apps/details?id=com.vested.investing.android&hl=en_IN",
-      "androidLinkName": "android link 🔗",
+      "androidLinkName": "android🔗",
       "iosLink": "https://apps.apple.com/in/app/vested-us-stocks-investing/id1478145933",
-      "iosLinkName": "ios link 🔗"
+      "iosLinkName": "ios🔗"
     },
     {
       "key": "beehive",
@@ -205,9 +205,9 @@
         "🇺🇸 Ensured HIPAA compliance for an American client."
       ],
       "androidLink": "https://play.google.com/store/apps/details?id=com.beehive.production",
-      "androidLinkName": "android link 🔗",
+      "androidLinkName": "android🔗",
       "iosLink": "https://apps.apple.com/us/app/beehive-parenting-simplified/id6446121415",
-      "iosLinkName": "ios link 🔗"
+      "iosLinkName": "ios🔗"
     },
     {
       "key": "audvice",
@@ -221,9 +221,9 @@
         "🛡️ Ensured GDPR compliance throughout."
       ],
       "androidLink": "https://play.google.com/store/apps/details?id=com.audvice.audvice&hl=en_IN",
-      "androidLinkName": "android link 🔗",
+      "androidLinkName": "android🔗",
       "iosLink": "https://apps.apple.com/in/app/audvice/id1440810304",
-      "iosLinkName": "ios link 🔗"
+      "iosLinkName": "ios🔗"
     },
     {
       "key": "amf",
@@ -236,9 +236,9 @@
         " 💾 Implemented Redis caching to optimize performance after matches."
       ],
       "androidLink": "https://play.google.com/store/apps/details?id=com.amf&hl=en_AU",
-      "androidLinkName": "android link 🔗",
+      "androidLinkName": "android🔗",
       "iosLink": "https://apps.apple.com/us/app/mal%C3%BD-fotbal/id1665660869",
-      "iosLinkName": "ios link 🔗"
+      "iosLinkName": "ios🔗"
     },
     {
       "key": "loonoy",
@@ -251,9 +251,9 @@
         "🇨🇿 Developed for a Czech Republic client, customizing features to meet market needs and compliance standards."
       ],
       "androidLink": "https://play.google.com/store/apps/details?id=com.loonoy_mobile",
-      "androidLinkName": "android link 🔗",
+      "androidLinkName": "android🔗",
       "iosLink": "https://apps.apple.com/cz/app/loonoy/id1596907346",
-      "iosLinkName": "ios link 🔗"
+      "iosLinkName": "ios🔗"
     },
     {
       "key": "cityMall",
@@ -266,9 +266,9 @@
         "⚙️ Integrated APIs and set up CI/CD pipeline with AppCenter."
       ],
       "androidLink": "https://play.google.com/store/apps/details?id=com.citymall.app&hl=en_IN",
-      "androidLinkName": "android link 🔗",
+      "androidLinkName": "android🔗",
       "iosLink": "",
-      "iosLinkName": "ios link 🔗"
+      "iosLinkName": "ios🔗"
     },
     {
       "key": "gutesleben",
@@ -282,9 +282,9 @@
         "💾 Backend Server: Created with Express, TypeScript, and MongoDB for robust APIs."
       ],
       "androidLink": "https://apps.apple.com/us/app/gutes-leben/id1541165124",
-      "androidLinkName": "android link 🔗",
+      "androidLinkName": "android🔗",
       "iosLink": "https://apps.apple.com/us/app/gutes-leben/id1541165124",
-      "iosLinkName": "ios link 🔗"
+      "iosLinkName": "ios🔗"
     },
     {
       "key": "fintechClone",
@@ -299,9 +299,9 @@
         "🌐 Integrated CoinMarketCap API for real-time crypto prices."
       ],
       "androidLink": "https://github.com/praveen-me/fintech-clone",
-      "androidLinkName": "Github link 🔗",
+      "androidLinkName": "Github🔗",
       "iosLink": "",
-      "iosLinkName": "ios link 🔗"
+      "iosLinkName": "ios🔗"
     },
     {
       "key": "rnFashionApp",
@@ -313,9 +313,9 @@
         "🔐 Utilized Firebase for user authentication and data storage, ensuring a secure and efficient backend."
       ],
       "androidLink": "https://play.google.com/store/apps/details?id=com.rn_fashion_app&hl=en_IN",
-      "androidLinkName": "android link 🔗",
+      "androidLinkName": "android🔗",
       "iosLink": "",
-      "iosLinkName": "ios link 🔗"
+      "iosLinkName": "ios🔗"
     }
   ]
 }
