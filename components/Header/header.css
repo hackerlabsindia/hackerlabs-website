@@ -36,7 +36,7 @@
   @apply font-bold truncate text-sm text-green-800;
 }
 .button {
-  @apply cursor-pointer select-none rounded-2xl px-6 py-3 items-center gap-3 font-inter bg-gray-900 text-white hover:bg-gray-800 hidden md:flex sm:hidden;
+  @apply cursor-pointer select-none rounded-2xl px-6 py-3 items-center gap-3 font-inter bg-gray-900 text-white hover:bg-gray-800 hidden md:flex ;
 }
 .buttonLogo {
   @apply flex items-center justify-center;

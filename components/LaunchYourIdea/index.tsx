@@ -16,7 +16,7 @@ const LaunchYourIdea = () => {
             {content.StartProject.text1}
           </h3>
           <p className="font-inter text-lg"> {content.StartProject.text2}</p>
-          <Button containerClass={"button font-inter"} tabIndex={0}>
+          <Button containerClass={"footerButton font-inter"} tabIndex={0}>
             {content.StartProject.button}
           </Button>
         </div>
