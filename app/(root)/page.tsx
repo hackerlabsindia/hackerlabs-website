@@ -1,16 +1,16 @@
-import ContactForm from "@hackerlabs/components/ContactForm";
-import DecisionHelper from "@hackerlabs/components/DecisionHelper";
-import { FaqProvider } from "@hackerlabs/components/DecisionHelper/FaqContext";
-import Footer from "@hackerlabs/components/Footer";
-import Header from "@hackerlabs/components/Header";
-import LaunchYourIdea from "@hackerlabs/components/LaunchYourIdea";
+import ContactForm from "@hackerlabs/component/ContactForm";
+import DecisionHelper from "@hackerlabs/component/DecisionHelper";
+import { FaqProvider } from "@hackerlabs/component/DecisionHelper/FaqContext";
+import Footer from "@hackerlabs/component/Footer";
+import Header from "@hackerlabs/component/Header";
+import LaunchYourIdea from "@hackerlabs/component/LaunchYourIdea";
 
-import MainPage from "@hackerlabs/components/MainPage";
-import PricingAndServicing from "@hackerlabs/components/PricingAndServicing";
+import MainPage from "@hackerlabs/component/MainPage";
+import PricingAndServicing from "@hackerlabs/component/PricingAndServicing";
 
-import ProcessFlow from "@hackerlabs/components/ProcessFlow";
+import ProcessFlow from "@hackerlabs/component/ProcessFlow";
 
-import ServiceDetails from "@hackerlabs/components/ServiceDetails";
+import ServiceDetails from "@hackerlabs/component/ServiceDetails";
 
 export default function Home() {
   return (
@@ -26,7 +26,7 @@ export default function Home() {
           <DecisionHelper />
         </FaqProvider>
 
-        <ContactForm />
+        <ContactForm type={"contact-form"} />
         <LaunchYourIdea />
       </div>
       <Footer />

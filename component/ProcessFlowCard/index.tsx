@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../Button";
 import "../ProcessFlow/processFlow.css";
+import Link from "next/link";
 
 export interface ProcessFlowProps {
   title: string;
@@ -29,9 +30,11 @@ const ProcessFlowCard = ({
         <br />
       </p>
       {highlight && (
-        <Button containerClass={"startButton"} tabIndex={0}>
-          {"Start a Project"}
-        </Button>
+        <Link href="#contact-form">
+          <Button containerClass={"startButton"} tabIndex={0}>
+            {"Start a Project"}
+          </Button>
+        </Link>
       )}
       {iconComponent}
     </div>

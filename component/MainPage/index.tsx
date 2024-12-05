@@ -4,6 +4,8 @@ import "./mainPage.css";
 import Icon from "../Icon";
 import { ArrowDown } from "@hackerlabs/icons";
 import Button from "../Button";
+import Link from "next/link";
+
 
 const MainPage = () => {
   return (
@@ -40,13 +42,17 @@ const MainPage = () => {
           <span>{content.secondaryText.line3}</span>
         </div>
         <div className="mt-12 flex justify-center gap-3">
-          <Button containerClass={"button1"} tabIndex={0}>
-            {content.buttons.button1}
-          </Button>
-          <Button containerClass={"button2"} tabIndex={0}>
-            {content.buttons.button2}
-            <Icon Icon={ArrowDown} width={20} height={20} />
-          </Button>
+          <Link href="#contact-form">
+            <Button containerClass={"button1"} tabIndex={0}>
+              {content.buttons.button1}
+            </Button>
+          </Link>
+          <Link href="#See-packages">
+            <Button containerClass={"button2"} tabIndex={0}>
+              {content.buttons.button2}
+              <Icon Icon={ArrowDown} width={20} height={20} />
+            </Button>
+          </Link>
         </div>
       </div>
     </div>

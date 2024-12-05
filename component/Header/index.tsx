@@ -8,6 +8,7 @@ import { DottedLine } from "@hackerlabs/icons";
 import Logo from "../Logo";
 
 const Header = () => {
+
   return (
     <div className="headerContainer1 border-color">
       <div className="headerContainer2">
@@ -35,14 +36,16 @@ const Header = () => {
               </span>
               <span className="availableDate">{content.header.fontHeader}</span>
             </div>
-            <Button
-              text={content.buttons.button1}
-              containerClass={"button"}
-              iconPosition={IconPosition.START}
-              icon={
-                <Logo logoContainerClass="flex items-center justify-center" />
-              }
-            ></Button>
+            <Link href="#contact-form">
+              <Button
+                text={content.buttons.button1}
+                containerClass={"button"}
+                iconPosition={IconPosition.START}
+                icon={
+                  <Logo logoContainerClass="flex items-center justify-center" />
+                }
+              ></Button>
+            </Link>
           </div>
           <Icon
             Icon={DottedLine}
