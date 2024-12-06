@@ -1,7 +1,10 @@
 import React from "react";
 import Button, { ButtonProps, IconPosition } from "../Button";
 import clsx from "clsx";
-import Link from "next/link";
+
+
+import useScrollToElement from "@hackerlabs/@/hooks/useScrollToElement";
+
 
 export interface ServiceCardProps {
   tag: string;
@@ -9,12 +12,18 @@ export interface ServiceCardProps {
   description: string;
   price: string;
   text: string;
+
+  contactFormRef: React.RefObject<HTMLDivElement>;
+
+
   iconComponent: JSX.Element;
   button: string;
   highlight: boolean;
 }
 
-const ServiceCard = ({
+
+const ServiceCard: React.FC<ServiceCardProps> = ({
+
   tag,
   title,
   description,
@@ -23,7 +32,11 @@ const ServiceCard = ({
   iconComponent,
   button,
   highlight = false,
+
+  contactFormRef,
 }: ServiceCardProps) => {
+  const scrollToContactForm = useScrollToElement(contactFormRef);
+
   return (
     <>
       <div className="fixedPrice">{tag}</div>
@@ -32,16 +45,17 @@ const ServiceCard = ({
         <p className="mt-3">{description}</p>
       </div>
       <div className="boxFooter">
-        <Link href="#contact-form">
-          <Button
-            text={button}
-            containerClass={clsx("startButton1", {
-              highlightedButton: highlight,
-            })}
-            iconPosition={IconPosition.END}
-            icon={iconComponent}
-          />
-        </Link>
+
+        <Button
+          text={button}
+          containerClass={clsx("startButton1", {
+            highlightedButton: highlight,
+          })}
+          onClick={scrollToContactForm}
+          iconPosition={IconPosition.END}
+          icon={iconComponent}
+        />
+
         <div className="flex gap-1.5">
           {text}
           <p className="font-semibold"> {price}</p>

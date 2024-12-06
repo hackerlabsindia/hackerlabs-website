@@ -24,9 +24,17 @@ const Button = ({
   icon,
   text,
   containerClass,
+  tabIndex,
+  label,
+  onClick,
 }: ButtonProps) => {
   return (
-    <div className={clsx(containerClass)}>
+    <button
+      className={clsx(containerClass)}
+      tabIndex={tabIndex}
+      aria-label={label}
+      onClick={onClick}
+    >
       {children ? (
         children
       ) : (
@@ -36,7 +44,10 @@ const Button = ({
           {icon && iconPosition === IconPosition.END && icon}
         </>
       )}
-    </div>
+
+  </button>
+
+   
   );
 };
 
