@@ -33,7 +33,7 @@ const Button = ({
       className={clsx(containerClass)}
       tabIndex={tabIndex}
       aria-label={label}
-      onClick={onClick} // Attach the click handler here
+      onClick={onClick}
     >
       {children ? (
         children
@@ -44,7 +44,10 @@ const Button = ({
           {icon && iconPosition === IconPosition.END && icon}
         </>
       )}
+
   </button>
+
+   
   );
 };
 

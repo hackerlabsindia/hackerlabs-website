@@ -24,6 +24,7 @@ const ServiceCardContainer = ({
         iconComponent={iconComponent}
         highlight={highlight}
         contactFormRef={serviceCard.contactFormRef}
+
       />
     </div>
   );

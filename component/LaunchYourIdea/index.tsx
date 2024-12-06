@@ -3,6 +3,7 @@ import React from "react";
 import content from "@hackerlabs/content/content.json";
 import Button from "../Button";
 import Link from "next/link";
+
 import useScrollToElement from "@hackerlabs/@/hooks/useScrollToElement";
 interface IdeaProps {
   contactFormRef: React.RefObject<HTMLDivElement>;
@@ -11,6 +12,7 @@ interface IdeaProps {
 
 const LaunchYourIdea: React.FC<IdeaProps> = ({ contactFormRef }) => {
   const scrollToContactForm = useScrollToElement(contactFormRef);
+
   return (
     <div className="main-container">
       <div className="absolute left-1/4 top-0 h-full w-px  bg-gray-300"></div>
@@ -24,6 +26,7 @@ const LaunchYourIdea: React.FC<IdeaProps> = ({ contactFormRef }) => {
           </h3>
           <p className="font-inter text-lg"> {content.StartProject.text2}</p>
 
+
           <Button
             containerClass={"footerButton font-inter"}
             tabIndex={0}
@@ -31,6 +34,7 @@ const LaunchYourIdea: React.FC<IdeaProps> = ({ contactFormRef }) => {
           >
             {content.StartProject.button}
           </Button>
+
         </div>
       </div>
     </div>

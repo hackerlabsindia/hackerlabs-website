@@ -23,6 +23,7 @@ import { InputOptionIcon, Submit } from "@hackerlabs/icons";
 import { Textarea } from "@hackerlabs/@/components/ui/textarea";
 import React, { forwardRef } from "react";
 
+
 interface Option {
   label: string;
   value: string;
@@ -88,6 +89,7 @@ const DynamicOptions: React.FC<DynamicOptionsProps> = ({
   );
 };
 type FormType = "contact-form";
+
 
 const ContactForm = forwardRef<HTMLDivElement, { type: "contact-form" }>(
   ({ type }, ref) => {
@@ -252,4 +254,7 @@ const ContactForm = forwardRef<HTMLDivElement, { type: "contact-form" }>(
   }
 );
 ContactForm.displayName = "ContactForm";
+
+
+  
 export default ContactForm;

@@ -1,3 +1,4 @@
+
 "use client";
 
 import ContactForm from "@hackerlabs/component/ContactForm";
@@ -14,7 +15,6 @@ import ProcessFlow from "@hackerlabs/component/ProcessFlow";
 
 import ServiceDetails from "@hackerlabs/component/ServiceDetails";
 import { useRef } from "react";
-
 export default function Home() {
   const contactFormRef = useRef<HTMLDivElement>(null);
   const pricingRef = useRef<HTMLDivElement>(null);
@@ -34,10 +34,12 @@ export default function Home() {
           <DecisionHelper />
         </FaqProvider>
 
+
         <div ref={contactFormRef}>
           <ContactForm type={"contact-form"} />
         </div>
         <LaunchYourIdea contactFormRef={contactFormRef} />
+
       </div>
       <Footer />
     </main>
