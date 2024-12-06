@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import content from "@hackerlabs/content/content.json";
 import Icon from "../Icon";
 import {
@@ -13,6 +13,12 @@ import {
 } from "@hackerlabs/icons";
 
 import ProcessFlowContainer from "../ProcessFlowContainer";
+import ContactForm from "../ContactForm";
+import useScrollToElement from "@hackerlabs/@/hooks/useScrollToElement";
+import Button from "../Button";
+interface ProcessProps {
+  contactFormRef: React.RefObject<HTMLDivElement>;
+}
 
 const ProcessFlowIcons = [
   IntroCall,
@@ -21,7 +27,8 @@ const ProcessFlowIcons = [
   DevelopmentIcon,
 ];
 
-const ProcessFlow = () => {
+const ProcessFlow: React.FC<ProcessProps> = ({ contactFormRef }) => {
+  const scrollToContactForm = useScrollToElement(contactFormRef);
   return (
     <div className="headingContainer">
       <div className="fadeVerticalLines left-1/4 "></div>
@@ -51,7 +58,7 @@ const ProcessFlow = () => {
           return (
             <ProcessFlowContainer
               key={index}
-              processFlowCard={processFlowCard}
+              processFlowCard={{ ...processFlowCard, contactFormRef }}
               iconComponent={<ProcessIcon className="icon" />}
               highlight={index === 0}
             />

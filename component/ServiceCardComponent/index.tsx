@@ -23,6 +23,7 @@ const ServiceCardContainer = ({
         price={serviceCard.price}
         iconComponent={iconComponent}
         highlight={highlight}
+        contactFormRef={serviceCard.contactFormRef}
       />
     </div>
   );

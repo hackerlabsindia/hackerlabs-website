@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useRef } from "react";
 import content from "@hackerlabs/content/content.json";
 import "./header.css";
 import Button, { IconPosition } from "../Button";
@@ -6,8 +8,13 @@ import Icon from "../Icon";
 import Link from "next/link";
 import { DottedLine } from "@hackerlabs/icons";
 import Logo from "../Logo";
+import useScrollToElement from "@hackerlabs/@/hooks/useScrollToElement";
+interface HeaderProps {
+  contactFormRef: React.RefObject<HTMLDivElement>;
+}
 
-const Header = () => {
+const Header: React.FC<HeaderProps> = ({ contactFormRef }) => {
+  const scrollToContactForm = useScrollToElement(contactFormRef);
 
   return (
     <div className="headerContainer1 border-color">
@@ -36,16 +43,16 @@ const Header = () => {
               </span>
               <span className="availableDate">{content.header.fontHeader}</span>
             </div>
-            <Link href="#contact-form">
-              <Button
-                text={content.buttons.button1}
-                containerClass={"button"}
-                iconPosition={IconPosition.START}
-                icon={
-                  <Logo logoContainerClass="flex items-center justify-center" />
-                }
-              ></Button>
-            </Link>
+
+            <Button
+              text={content.buttons.button1}
+              containerClass={"button"}
+              onClick={scrollToContactForm}
+              iconPosition={IconPosition.START}
+              icon={
+                <Logo logoContainerClass="flex items-center justify-center" />
+              }
+            ></Button>
           </div>
           <Icon
             Icon={DottedLine}

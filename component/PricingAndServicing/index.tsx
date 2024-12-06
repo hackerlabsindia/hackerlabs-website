@@ -1,12 +1,20 @@
-import React from "react";
+import React, { forwardRef } from "react";
 
 import content from "@hackerlabs/content/content.json";
 import { ArrowRight, CallIcon, LetsTalk } from "@hackerlabs/icons";
 import ServiceCardContainer from "../ServiceCardComponent";
 
+interface ServiceProps {
+  contactFormRef: React.RefObject<HTMLDivElement>;
+  pricingRef?: React.RefObject<HTMLDivElement>;
+}
+
 const serviceCardProperties = [ArrowRight, LetsTalk, CallIcon];
 
-const PricingAndServicing = () => {
+const PricingAndServicing: React.FC<ServiceProps> = ({
+  contactFormRef,
+  pricingRef,
+}) => {
   return (
     <div className="pricingContainer" id="pricing">
       <div className="verticalLines left-1/4"></div>
@@ -18,14 +26,14 @@ const PricingAndServicing = () => {
           <h2 className="heading2">{content.OurServices.text2}</h2>
         </div>
       </div>
-      <div className="boxContainer">
+      <div className="boxContainer" ref={pricingRef}>
         {content.ServiceCard.map((serviceCard, index) => {
           const ServiceIcon = serviceCardProperties[index];
 
           return (
             <ServiceCardContainer
               key={index}
-              serviceCard={serviceCard}
+              serviceCard={{ ...serviceCard, contactFormRef }}
               iconComponent={<ServiceIcon />}
               highlight={index === 1}
             />
@@ -36,4 +44,5 @@ const PricingAndServicing = () => {
   );
 };
 
+PricingAndServicing.displayName = "PricingAndServicing";
 export default PricingAndServicing;
