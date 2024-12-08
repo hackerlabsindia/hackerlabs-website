@@ -1,5 +1,5 @@
 .mainPageContainer {
-  @apply relative flex justify-center bg-[url('/assets/backgroundGrid.svg')];
+  @apply relative flex justify-center ;
 }
 
 .textContainer {
@@ -29,3 +29,5 @@
 .button2 {
   @apply cursor-pointer select-none rounded-2xl px-6 py-3 flex items-center font-inter border border-solid border-black bg-white text-gray-900 gap-1 hover:bg-transparent;
 }
+
+/* bg-[url('/assets/backgroundGrid.svg')] */
