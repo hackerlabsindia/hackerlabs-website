@@ -5,6 +5,16 @@ import Icon from "../Icon";
 import { ArrowDown } from "@hackerlabs/icons";
 import Button from "../Button";
 
+import useScrollToElement from "@hackerlabs/@/hooks/useScrollToElement";
+interface MainPageProps {
+  contactFormRef: React.RefObject<HTMLDivElement>;
+  pricingRef: React.RefObject<HTMLDivElement>;
+}
+
+const MainPage: React.FC<MainPageProps> = ({ contactFormRef, pricingRef }) => {
+  const scrollToContactForm = useScrollToElement(contactFormRef);
+  const scrollToPricing = useScrollToElement(pricingRef);
+
 
 import useScrollToElement from "@hackerlabs/@/hooks/useScrollToElement";
 interface MainPageProps {
@@ -15,6 +25,7 @@ interface MainPageProps {
 const MainPage: React.FC<MainPageProps> = ({ contactFormRef, pricingRef }) => {
   const scrollToContactForm = useScrollToElement(contactFormRef);
   const scrollToPricing = useScrollToElement(pricingRef);
+
 
   return (
     <div className="mainPageContainer vignette ">
@@ -50,6 +61,7 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormRef, pricingRef }) => {
           <span>{content.secondaryText.line3}</span>
         </div>
         <div className="mt-12 flex justify-center gap-3">
+
           <Button
             containerClass={"button1"}
             tabIndex={0}
@@ -66,6 +78,7 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormRef, pricingRef }) => {
             {content.buttons.button2}
             <Icon Icon={ArrowDown} width={20} height={20} />
           </Button>
+
         </div>
       </div>
     </div>
