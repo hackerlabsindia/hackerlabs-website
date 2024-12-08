@@ -29,6 +29,7 @@ import GutesLeben from "@assets/GutesLeben/GutesLeben.png";
 import Loonoy from "@assets/Loonoy/Loonoy.png";
 import RNFashionApp from "@assets/RNFashion/RNFashion.png";
 import VestedFinance from "@assets/VestedFinance/VestedFinance.png";
+import BackgroundImage from "@assets/backgroundGrid.svg";
 
 export {
   DottedLine,
@@ -62,4 +63,5 @@ export {
   Loonoy,
   RNFashionApp,
   VestedFinance,
+  BackgroundImage,
 };
