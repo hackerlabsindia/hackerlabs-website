@@ -4,7 +4,6 @@ import "./mainPage.css";
 import Icon from "../Icon";
 import { ArrowDown } from "@hackerlabs/icons";
 import Button from "../Button";
-import Link from "next/link";
 
 import useScrollToElement from "@hackerlabs/@/hooks/useScrollToElement";
 interface MainPageProps {
@@ -16,8 +15,20 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormRef, pricingRef }) => {
   const scrollToContactForm = useScrollToElement(contactFormRef);
   const scrollToPricing = useScrollToElement(pricingRef);
 
+
+import useScrollToElement from "@hackerlabs/@/hooks/useScrollToElement";
+interface MainPageProps {
+  contactFormRef: React.RefObject<HTMLDivElement>;
+  pricingRef: React.RefObject<HTMLDivElement>;
+}
+
+const MainPage: React.FC<MainPageProps> = ({ contactFormRef, pricingRef }) => {
+  const scrollToContactForm = useScrollToElement(contactFormRef);
+  const scrollToPricing = useScrollToElement(pricingRef);
+
+
   return (
-    <div className="mainPageContainer vignette">
+    <div className="mainPageContainer vignette ">
       <div className="textContainer">
         <h2 className="mainText font-inter">
           {content.mainPage.topTitle}
