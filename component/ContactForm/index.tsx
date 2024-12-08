@@ -101,7 +101,6 @@ const ContactForm = forwardRef<HTMLDivElement, { type: "contact-form" }>(
     ];
 
     const authFormSchema = (formType: FormType) => {
-      console.log({ formType });
       return z.object({
         email: z.string().email(),
         fullName:
@@ -133,13 +132,12 @@ const ContactForm = forwardRef<HTMLDivElement, { type: "contact-form" }>(
     });
 
     const handleOptionChange = (selectedValue: string) => {
-      console.log("Selected option:", selectedValue);
+      // console.log("Selected option:", selectedValue);
     };
 
     const onSubmit = async (values: z.infer<typeof formSchema>) => {
       setIsLoading(true);
       setErrorMessage(" ");
-      console.log("user");
     };
 
     return (

@@ -5,8 +5,6 @@ import "./index.css";
 import ProjectContainer from "../ProjectContainer";
 
 const PortfolioMainPage = () => {
-  console.log({ content });
-
   return (
     <div className="mainPage vignette projectTextContainer">
       <div className="mainHeading">

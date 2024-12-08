@@ -10,13 +10,6 @@ interface MainPageProps {
   contactFormRef: React.RefObject<HTMLDivElement>;
   pricingRef: React.RefObject<HTMLDivElement>;
 }
-
-const MainPage: React.FC<MainPageProps> = ({ contactFormRef, pricingRef }) => {
-  const scrollToContactForm = useScrollToElement(contactFormRef);
-  const scrollToPricing = useScrollToElement(pricingRef);
-
-
-import useScrollToElement from "@hackerlabs/@/hooks/useScrollToElement";
 interface MainPageProps {
   contactFormRef: React.RefObject<HTMLDivElement>;
   pricingRef: React.RefObject<HTMLDivElement>;
